@@ -1,0 +1,337 @@
+{
+  "model": "subscriptions",
+  "version": "1.0",
+  "income_monthly": {
+    "2005": 1950,
+    "2015": 2253,
+    "2025": 2875,
+    "provenance": {
+      "kind": "derived",
+      "source_ids": [
+        "ons_household_disposable_income",
+        "ons_family_spending_fye_2024"
+      ],
+      "method": "Computed from extracted metrics: baseline monthly income from rule 'median household disposable income in the UK was \u00a3([0-9,]+), a decrease', then backcast to 2015/2005 using modeled historical income ratios."
+    }
+  },
+  "household_stacks": {
+    "2005": {
+      "year": 2005,
+      "household_type": "median",
+      "expenses": [
+        {
+          "category": "Mortgage",
+          "amount": 800,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Council Tax",
+          "amount": 90,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Energy (gas/electric)",
+          "amount": 80,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Water",
+          "amount": 25,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Landline/Dial-up Internet",
+          "amount": 25,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Mobile (pay-as-you-go)",
+          "amount": 20,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "TV License",
+          "amount": 12,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "DVD Rentals (Blockbuster)",
+          "amount": 15,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Car Loan",
+          "amount": 150,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Car Insurance",
+          "amount": 50,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Home Insurance",
+          "amount": 15,
+          "is_subscription": false,
+          "owned_in_2005": false
+        }
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "ons_family_spending_fye_2024",
+          "ons_household_disposable_income"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Category-level household stack is an explicit scenario model, not direct source extraction."
+      }
+    },
+    "2015": {
+      "year": 2015,
+      "household_type": "median",
+      "expenses": [
+        {
+          "category": "Rent/Mortgage",
+          "amount": 900,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Council Tax",
+          "amount": 120,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Energy",
+          "amount": 110,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Water",
+          "amount": 30,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Broadband",
+          "amount": 25,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Mobile Phones",
+          "amount": 35,
+          "is_subscription": true,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Netflix",
+          "amount": 7.99,
+          "is_subscription": true,
+          "owned_in_2005": true
+        },
+        {
+          "category": "Spotify",
+          "amount": 9.99,
+          "is_subscription": true,
+          "owned_in_2005": true
+        },
+        {
+          "category": "Car Finance",
+          "amount": 200,
+          "is_subscription": true,
+          "owned_in_2005": true
+        },
+        {
+          "category": "Car Insurance",
+          "amount": 65,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Home Insurance",
+          "amount": 18,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Gym",
+          "amount": 25,
+          "is_subscription": true,
+          "owned_in_2005": false
+        }
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "ons_family_spending_fye_2024",
+          "ons_household_disposable_income"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Category-level household stack is an explicit scenario model, not direct source extraction."
+      }
+    },
+    "2025": {
+      "year": 2025,
+      "household_type": "median",
+      "expenses": [
+        {
+          "category": "Rent (private)",
+          "amount": 1050,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Council Tax",
+          "amount": 147,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Energy (gas/electric)",
+          "amount": 180,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Water",
+          "amount": 35,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Broadband",
+          "amount": 30,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Mobile Phones (2 contracts)",
+          "amount": 40,
+          "is_subscription": true,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Netflix",
+          "amount": 10.99,
+          "is_subscription": true,
+          "owned_in_2005": true
+        },
+        {
+          "category": "Amazon Prime Video",
+          "amount": 8.99,
+          "is_subscription": true,
+          "owned_in_2005": true
+        },
+        {
+          "category": "Disney+",
+          "amount": 7.99,
+          "is_subscription": true,
+          "owned_in_2005": true
+        },
+        {
+          "category": "Spotify",
+          "amount": 10.99,
+          "is_subscription": true,
+          "owned_in_2005": true
+        },
+        {
+          "category": "Microsoft 365",
+          "amount": 8.33,
+          "is_subscription": true,
+          "owned_in_2005": true
+        },
+        {
+          "category": "iCloud Storage",
+          "amount": 2.99,
+          "is_subscription": true,
+          "owned_in_2005": true
+        },
+        {
+          "category": "Gym Membership",
+          "amount": 30,
+          "is_subscription": true,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Food Delivery Plus (Deliveroo)",
+          "amount": 15,
+          "is_subscription": true,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Car Finance (PCP)",
+          "amount": 300,
+          "is_subscription": true,
+          "owned_in_2005": true
+        },
+        {
+          "category": "Car Insurance",
+          "amount": 80,
+          "is_subscription": false,
+          "owned_in_2005": false
+        },
+        {
+          "category": "Home Insurance",
+          "amount": 20,
+          "is_subscription": false,
+          "owned_in_2005": false
+        }
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "ons_family_spending_fye_2024",
+          "ons_household_disposable_income"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Category-level household stack is an explicit scenario model, not direct source extraction."
+      }
+    }
+  },
+  "subscription_count_series": {
+    "years": [
+      2005,
+      2015,
+      2025
+    ],
+    "counts": [
+      0.0,
+      5.0,
+      10.0
+    ],
+    "provenance": {
+      "kind": "assumption",
+      "source_ids": [
+        "ons_family_spending_fye_2024"
+      ],
+      "assumption_class": "scenario_model",
+      "assumption_basis": "Computed from modeled household stack definitions in this repository; not an externally measured household-level subscription count series."
+    }
+  },
+  "provenance": {
+    "kind": "derived",
+    "source_ids": [
+      "ons_household_disposable_income"
+    ],
+    "method": "Computed from extracted metrics for income baseline; stack compositions remain explicit scenario assumptions."
+  },
+  "generated": {
+    "generator": "code/build_provenance_inputs.py",
+    "generated_utc": "2026-02-13T17:51:29.711819+00:00",
+    "artifact_lock_sha256": "7c23e0af04caf61f7e2fd707859ec0652ab92a7fd30501fc7c8d45dbd8aa28ed",
+    "extracted_metrics_sha256": "59292fc8a1d8ebb474f67a966fa7d61c9003aac572e684bda1bcef913ccd76ae"
+  }
+}

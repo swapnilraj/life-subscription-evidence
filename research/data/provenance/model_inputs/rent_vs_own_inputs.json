@@ -1,0 +1,123 @@
+{
+  "model": "rent_vs_own",
+  "version": "1.0",
+  "parameters": {
+    "start_year": 2024,
+    "start_age": 25,
+    "years": 30,
+    "property_price_2024": 290000.0,
+    "deposit_percent": 0.2,
+    "mortgage_rate": 0.0391,
+    "mortgage_term_years": 30,
+    "monthly_rent_2024": 1246.0,
+    "rent_inflation": 0.091,
+    "house_price_growth": 0.0432,
+    "maintenance_percent": 0.01,
+    "property_tax_monthly": 180.92,
+    "insurance_monthly": 50,
+    "renters_insurance_monthly": 20,
+    "savings_return": 0.0364
+  },
+  "provenance_blocks": [
+    {
+      "name": "market_baseline",
+      "fields": [
+        "property_price_2024",
+        "monthly_rent_2024",
+        "rent_inflation",
+        "mortgage_rate",
+        "house_price_growth",
+        "savings_return",
+        "property_tax_monthly"
+      ],
+      "provenance": {
+        "kind": "derived",
+        "source_ids": [
+          "ons_housing_affordability_table1_csv",
+          "ons_private_rent_fig2_csv",
+          "boe_quoted_rates",
+          "ons_private_rent_fig1_csv",
+          "gov_council_tax_band_d_england_2024_25_table2"
+        ],
+        "method": "Computed from extracted metrics: property price from rule 'CSV row=England, column='Median House price (12 months to Sep 2024)'' and private rent from rule 'CSV row='Mar 2024', column='Great Britain'', and rent inflation from rule 'Derived from CSV rows 'Mar 2023' and 'Mar 2024', column='England'', and mortgage rate from rule 'BoE fromshowcolumns table series=IUMBV34, date=31 Jan 26', and house-price growth from rule 'CSV column='UK HPI' trailing mean over last 60 non-null monthly observations (Mar 2019 to Feb 2024)', and savings return from rule 'BoE fromshowcolumns table series=IUMWTFA, date=31 Jan 26', and council-tax baseline from rule 'ODS Table_2 row='England', column='Average council tax including parish precepts (Band D)''."
+      }
+    },
+    {
+      "name": "interest_and_term",
+      "fields": [
+        "mortgage_term_years"
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "boe_quoted_rates"
+        ],
+        "assumption_class": "common_parlance",
+        "assumption_basis": "Mortgage term remains a scenario assumption; market rate is source-derived."
+      }
+    },
+    {
+      "name": "scenario_assumptions",
+      "fields": [
+        "maintenance_percent"
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "ons_family_spending_fye_2024"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Home-maintenance burden remains a scenario parameter; baseline fixed costs and market rates are source-derived."
+      }
+    },
+    {
+      "name": "fixed_housing_cost_assumptions",
+      "fields": [
+        "insurance_monthly",
+        "renters_insurance_monthly"
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "ons_family_spending_fye_2024"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Representative monthly insurance assumptions informed by ONS household expenditure composition."
+      }
+    },
+    {
+      "name": "simulation_horizon_assumptions",
+      "fields": [
+        "start_year",
+        "start_age",
+        "years",
+        "deposit_percent"
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "ons_housing_affordability_2024"
+        ],
+        "assumption_class": "common_parlance",
+        "assumption_basis": "Simulation-horizon and deposit settings are scenario design parameters anchored to current housing-affordability context."
+      }
+    }
+  ],
+  "provenance": {
+    "kind": "derived",
+    "source_ids": [
+      "ons_housing_affordability_table1_csv",
+      "ons_private_rent_fig2_csv",
+      "boe_quoted_rates",
+      "ons_private_rent_fig1_csv",
+      "gov_council_tax_band_d_england_2024_25_table2"
+    ],
+    "method": "Computed from extracted metrics for baseline market inputs, with non-market scenario assumptions explicitly labeled."
+  },
+  "generated": {
+    "generator": "code/build_provenance_inputs.py",
+    "generated_utc": "2026-02-13T17:51:29.711819+00:00",
+    "artifact_lock_sha256": "7c23e0af04caf61f7e2fd707859ec0652ab92a7fd30501fc7c8d45dbd8aa28ed",
+    "extracted_metrics_sha256": "59292fc8a1d8ebb474f67a966fa7d61c9003aac572e684bda1bcef913ccd76ae"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "targets": [
+    "research/data/multipolar-transition.md",
+    "research/data/western-extraction.md"
+  ],
+  "allowed_domains": [
+    "api.worldbank.org",
+    "data.worldbank.org",
+    "ec.europa.eu",
+    "federalreserve.gov",
+    "fred.stlouisfed.org"
+  ]
+}

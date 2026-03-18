@@ -1,0 +1,499 @@
+{
+  "version": "1.0",
+  "runs": [
+    {
+      "timestamp_utc": "2026-02-13T12:05:14.900319+00:00",
+      "script": "rent_vs_own.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/rent_vs_own_inputs.json"
+      ],
+      "output_files": [
+        "research/data/rent_vs_own_simulation.csv",
+        "research/data/rent_vs_own_summary.json"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:05:14.905729+00:00",
+      "script": "student_loans.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/student_loans_inputs.json"
+      ],
+      "output_files": [
+        "research/data/repayment-analysis.csv",
+        "research/data/graduate-tax-comparison.csv",
+        "research/data/yearly-breakdown-35k.csv"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:05:14.909253+00:00",
+      "script": "leasehold.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/leasehold_inputs.json"
+      ],
+      "output_files": [
+        "research/data/leasehold_model_output.json"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:05:14.913447+00:00",
+      "script": "subscriptions.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/subscriptions_inputs.json"
+      ],
+      "output_files": [
+        "code/subscription_data.json",
+        "code/subscription_chart.txt"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:05:14.916149+00:00",
+      "script": "historical.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/historical_inputs.json"
+      ],
+      "output_files": [
+        "research/data/historical_analysis.json",
+        "research/data/csv/subscription_trend.csv",
+        "research/data/csv/wage_housing.csv",
+        "research/data/csv/homeownership.csv",
+        "research/data/csv/debt_savings.csv",
+        "research/data/csv/discretionary.csv"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:08:20.161556+00:00",
+      "script": "rent_vs_own.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/rent_vs_own_inputs.json"
+      ],
+      "output_files": [
+        "research/data/rent_vs_own_simulation.csv",
+        "research/data/rent_vs_own_summary.json"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:15:17.071177+00:00",
+      "script": "student_loans.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/student_loans_inputs.json"
+      ],
+      "output_files": [
+        "research/data/repayment-analysis.csv",
+        "research/data/graduate-tax-comparison.csv",
+        "research/data/yearly-breakdown-35k.csv"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:15:17.079898+00:00",
+      "script": "rent_vs_own.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/rent_vs_own_inputs.json"
+      ],
+      "output_files": [
+        "research/data/rent_vs_own_simulation.csv",
+        "research/data/rent_vs_own_summary.json"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:15:17.096954+00:00",
+      "script": "historical.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/historical_inputs.json"
+      ],
+      "output_files": [
+        "research/data/historical_analysis.json",
+        "research/data/csv/subscription_trend.csv",
+        "research/data/csv/wage_housing.csv",
+        "research/data/csv/homeownership.csv",
+        "research/data/csv/debt_savings.csv",
+        "research/data/csv/discretionary.csv"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:15:17.157683+00:00",
+      "script": "subscriptions.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/subscriptions_inputs.json"
+      ],
+      "output_files": [
+        "code/subscription_data.json",
+        "code/subscription_chart.txt"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:16:26.387878+00:00",
+      "script": "historical.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/historical_inputs.json"
+      ],
+      "output_files": [
+        "research/data/historical_analysis.json",
+        "research/data/csv/subscription_trend.csv",
+        "research/data/csv/wage_housing.csv",
+        "research/data/csv/homeownership.csv",
+        "research/data/csv/debt_savings.csv",
+        "research/data/csv/discretionary.csv"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:16:42.698362+00:00",
+      "script": "build_provenance_inputs.py",
+      "input_files": [
+        "research/data/provenance/primary_sources.json",
+        "research/data/provenance/raw/*.html"
+      ],
+      "output_files": [
+        "research/data/provenance/source_artifacts.lock.json",
+        "research/data/provenance/extracted_metrics.json",
+        "research/data/provenance/model_inputs/*.json"
+      ],
+      "metadata": {
+        "refresh_sources": false
+      }
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:32:17.947172+00:00",
+      "script": "build_provenance_inputs.py",
+      "input_files": [
+        "research/data/provenance/primary_sources.json",
+        "research/data/provenance/raw/*.html"
+      ],
+      "output_files": [
+        "research/data/provenance/source_artifacts.lock.json",
+        "research/data/provenance/extracted_metrics.json",
+        "research/data/provenance/model_inputs/*.json"
+      ],
+      "metadata": {
+        "refresh_sources": false
+      }
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:32:22.710997+00:00",
+      "script": "student_loans.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/student_loans_inputs.json"
+      ],
+      "output_files": [
+        "research/data/repayment-analysis.csv",
+        "research/data/graduate-tax-comparison.csv",
+        "research/data/yearly-breakdown-35k.csv"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:32:22.739824+00:00",
+      "script": "rent_vs_own.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/rent_vs_own_inputs.json"
+      ],
+      "output_files": [
+        "research/data/rent_vs_own_simulation.csv",
+        "research/data/rent_vs_own_summary.json"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:32:22.786558+00:00",
+      "script": "historical.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/historical_inputs.json"
+      ],
+      "output_files": [
+        "research/data/historical_analysis.json",
+        "research/data/csv/subscription_trend.csv",
+        "research/data/csv/wage_housing.csv",
+        "research/data/csv/homeownership.csv",
+        "research/data/csv/debt_savings.csv",
+        "research/data/csv/discretionary.csv"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:32:22.968664+00:00",
+      "script": "leasehold.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/leasehold_inputs.json"
+      ],
+      "output_files": [
+        "research/data/leasehold_model_output.json"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T12:32:23.017670+00:00",
+      "script": "subscriptions.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/subscriptions_inputs.json"
+      ],
+      "output_files": [
+        "code/subscription_data.json",
+        "code/subscription_chart.txt"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T13:02:35.778259+00:00",
+      "script": "build_provenance_inputs.py",
+      "input_files": [
+        "research/data/provenance/primary_sources.json",
+        "research/data/provenance/raw/*.html"
+      ],
+      "output_files": [
+        "research/data/provenance/source_artifacts.lock.json",
+        "research/data/provenance/extracted_metrics.json",
+        "research/data/provenance/model_inputs/*.json"
+      ],
+      "metadata": {
+        "refresh_sources": false
+      }
+    },
+    {
+      "timestamp_utc": "2026-02-13T13:02:58.032259+00:00",
+      "script": "build_provenance_inputs.py",
+      "input_files": [
+        "research/data/provenance/primary_sources.json",
+        "research/data/provenance/raw/*.html"
+      ],
+      "output_files": [
+        "research/data/provenance/source_artifacts.lock.json",
+        "research/data/provenance/extracted_metrics.json",
+        "research/data/provenance/model_inputs/*.json"
+      ],
+      "metadata": {
+        "refresh_sources": false
+      }
+    },
+    {
+      "timestamp_utc": "2026-02-13T13:03:08.611769+00:00",
+      "script": "student_loans.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/student_loans_inputs.json"
+      ],
+      "output_files": [
+        "research/data/repayment-analysis.csv",
+        "research/data/graduate-tax-comparison.csv",
+        "research/data/yearly-breakdown-35k.csv"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T13:03:08.639434+00:00",
+      "script": "rent_vs_own.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/rent_vs_own_inputs.json"
+      ],
+      "output_files": [
+        "research/data/rent_vs_own_simulation.csv",
+        "research/data/rent_vs_own_summary.json"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T13:03:08.679916+00:00",
+      "script": "historical.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/historical_inputs.json"
+      ],
+      "output_files": [
+        "research/data/historical_analysis.json",
+        "research/data/csv/subscription_trend.csv",
+        "research/data/csv/wage_housing.csv",
+        "research/data/csv/homeownership.csv",
+        "research/data/csv/debt_savings.csv",
+        "research/data/csv/discretionary.csv"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T13:03:08.713832+00:00",
+      "script": "leasehold.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/leasehold_inputs.json"
+      ],
+      "output_files": [
+        "research/data/leasehold_model_output.json"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T13:03:08.747746+00:00",
+      "script": "subscriptions.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/subscriptions_inputs.json"
+      ],
+      "output_files": [
+        "code/subscription_data.json",
+        "code/subscription_chart.txt"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T15:50:47.673555+00:00",
+      "script": "build_provenance_inputs.py",
+      "input_files": [
+        "research/data/provenance/primary_sources.json",
+        "research/data/provenance/raw/*.*"
+      ],
+      "output_files": [
+        "research/data/provenance/source_artifacts.lock.json",
+        "research/data/provenance/extracted_metrics.json",
+        "research/data/provenance/model_inputs/*.json",
+        "research/data/provenance/ASSUMPTION_REGISTER.md"
+      ],
+      "metadata": {
+        "refresh_sources": true
+      }
+    },
+    {
+      "timestamp_utc": "2026-02-13T15:53:12.360181+00:00",
+      "script": "build_provenance_inputs.py",
+      "input_files": [
+        "research/data/provenance/primary_sources.json",
+        "research/data/provenance/raw/*.*"
+      ],
+      "output_files": [
+        "research/data/provenance/source_artifacts.lock.json",
+        "research/data/provenance/extracted_metrics.json",
+        "research/data/provenance/model_inputs/*.json",
+        "research/data/provenance/ASSUMPTION_REGISTER.md"
+      ],
+      "metadata": {
+        "refresh_sources": false
+      }
+    },
+    {
+      "timestamp_utc": "2026-02-13T16:27:02.411870+00:00",
+      "script": "build_provenance_inputs.py",
+      "input_files": [
+        "research/data/provenance/primary_sources.json",
+        "research/data/provenance/raw/*.*"
+      ],
+      "output_files": [
+        "research/data/provenance/source_artifacts.lock.json",
+        "research/data/provenance/extracted_metrics.json",
+        "research/data/provenance/model_inputs/*.json",
+        "research/data/provenance/ASSUMPTION_REGISTER.md"
+      ],
+      "metadata": {
+        "refresh_sources": true
+      }
+    },
+    {
+      "timestamp_utc": "2026-02-13T16:28:39.892211+00:00",
+      "script": "build_provenance_inputs.py",
+      "input_files": [
+        "research/data/provenance/primary_sources.json",
+        "research/data/provenance/raw/*.*"
+      ],
+      "output_files": [
+        "research/data/provenance/source_artifacts.lock.json",
+        "research/data/provenance/extracted_metrics.json",
+        "research/data/provenance/model_inputs/*.json",
+        "research/data/provenance/ASSUMPTION_REGISTER.md"
+      ],
+      "metadata": {
+        "refresh_sources": true
+      }
+    },
+    {
+      "timestamp_utc": "2026-02-13T17:26:28.458025+00:00",
+      "script": "build_provenance_inputs.py",
+      "input_files": [
+        "research/data/provenance/primary_sources.json",
+        "research/data/provenance/raw/*.*"
+      ],
+      "output_files": [
+        "research/data/provenance/source_artifacts.lock.json",
+        "research/data/provenance/extracted_metrics.json",
+        "research/data/provenance/model_inputs/*.json",
+        "research/data/provenance/ASSUMPTION_REGISTER.md"
+      ],
+      "metadata": {
+        "refresh_sources": false
+      }
+    },
+    {
+      "timestamp_utc": "2026-02-13T17:27:03.376646+00:00",
+      "script": "build_provenance_inputs.py",
+      "input_files": [
+        "research/data/provenance/primary_sources.json",
+        "research/data/provenance/raw/*.*"
+      ],
+      "output_files": [
+        "research/data/provenance/source_artifacts.lock.json",
+        "research/data/provenance/extracted_metrics.json",
+        "research/data/provenance/model_inputs/*.json",
+        "research/data/provenance/ASSUMPTION_REGISTER.md"
+      ],
+      "metadata": {
+        "refresh_sources": false
+      }
+    },
+    {
+      "timestamp_utc": "2026-02-13T17:51:29.716219+00:00",
+      "script": "build_provenance_inputs.py",
+      "input_files": [
+        "research/data/provenance/primary_sources.json",
+        "research/data/provenance/raw/*.*"
+      ],
+      "output_files": [
+        "research/data/provenance/source_artifacts.lock.json",
+        "research/data/provenance/extracted_metrics.json",
+        "research/data/provenance/model_inputs/*.json",
+        "research/data/provenance/ASSUMPTION_REGISTER.md"
+      ],
+      "metadata": {
+        "refresh_sources": false
+      }
+    },
+    {
+      "timestamp_utc": "2026-02-13T19:08:54.201683+00:00",
+      "script": "student_loans.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/student_loans_inputs.json"
+      ],
+      "output_files": [
+        "research/data/repayment-analysis.csv",
+        "research/data/graduate-tax-comparison.csv",
+        "research/data/yearly-breakdown-35k.csv"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T19:08:54.250428+00:00",
+      "script": "rent_vs_own.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/rent_vs_own_inputs.json"
+      ],
+      "output_files": [
+        "research/data/rent_vs_own_simulation.csv",
+        "research/data/rent_vs_own_summary.json"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T19:08:54.304529+00:00",
+      "script": "leasehold.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/leasehold_inputs.json"
+      ],
+      "output_files": [
+        "research/data/leasehold_model_output.json"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T19:08:54.361590+00:00",
+      "script": "subscriptions.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/subscriptions_inputs.json"
+      ],
+      "output_files": [
+        "code/subscription_data.json",
+        "code/subscription_chart.txt"
+      ]
+    },
+    {
+      "timestamp_utc": "2026-02-13T19:08:54.425339+00:00",
+      "script": "historical.py",
+      "input_files": [
+        "research/data/provenance/model_inputs/historical_inputs.json"
+      ],
+      "output_files": [
+        "research/data/historical_analysis.json",
+        "research/data/csv/subscription_trend.csv",
+        "research/data/csv/wage_housing.csv",
+        "research/data/csv/homeownership.csv",
+        "research/data/csv/debt_savings.csv",
+        "research/data/csv/discretionary.csv"
+      ]
+    }
+  ]
+}

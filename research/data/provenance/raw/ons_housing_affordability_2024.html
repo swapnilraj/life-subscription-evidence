@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Housing affordability in England and Wales - Office for National Statistics</title>
+        <meta charset="utf-8" />
+        <meta content="width=device-width,initial-scale=1.0,user-scalable=1" name="viewport">
+        <meta name="theme-color" content="#58595B">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#58595B">
+
+        <meta name="description" content="Data on house prices and annual earnings to calculate affordability ratios for national and subnational geographies in England and Wales on an annual basis. ">
+
+        
+            <link rel="canonical" href="/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024" />
+        
+        <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/418c927/css/main.css">
+		
+
+        <script>
+    // extractValue extracts the value from an undecodeable json cookie string
+    function extractValue(key, extractionString) {
+        const extractionRegex = new RegExp(`'${key}':(.*?)[,}]`)
+        const match = extractionString.match(extractionRegex)
+        if (match) {
+            return match[1]
+        }
+        
+        return null
+    }
+
+    // getUsageCookieValue reads the ons_cookie_policy to determine the user's usage preference. 
+    // When no policy is found, the user is opted out by default.
+    function getUsageCookieValue() {
+        // ons_cookie_policy handler
+        var policyCookie = document.cookie.match('(?:^|; )ons_cookie_policy=({.*?})');
+        if (policyCookie) {
+            console.debug('ons_cookie_policy found');
+
+            var usageValue = extractValue("usage", policyCookie[1]);
+            console.debug('usage is', usageValue);
+
+            // this needs to be the inverse - if usage is true the returned value is false and vice versa
+            // user is stating whether they are opting out of usage cookie
+            return (usageValue == "true") ? false : true
+        }
+        console.debug('no cookie found - opting out');
+        return true
+    }
+
+    // unescape html entities
+    function htmlUnescape(str){
+        return str
+                .replace(/&#x3D;/g, "=");
+    }
+
+    
+    var dataLayer = [{
+        contentTitle: htmlUnescape("Housing affordability in England and Wales: 2024"),
+        analyticsOptOut: getUsageCookieValue(),
+        "gtm.whitelist": ["google","hjtc","lcl"],
+        "gtm.blacklist": ["customScripts","sp","adm","awct","k","d","j"]
+    }];
+
+    
+    dataLayer[0]["releaseDate"] = "2025/03/24";
+    
+
+    
+
+    
+    
+
+
+    
+    
+        
+            
+                dataLayer[0]["latestRelease"] = "yes";
+                dataLayer[0]["url"] = "/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024";
+            
+        
+    
+
+    
+    
+        
+            dataLayer[0]["wordCount"] = 3695
+        
+    
+
+    
+    
+
+    
+        
+            
+                
+            
+        
+
+        
+            
+                dataLayer[0]["corrections"] = "yes";
+            
+        
+    
+
+</script>
+
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MBCBVQS');</script>
+        <!-- End Google Tag Manager -->
+
+        
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            
+            "description": "Data on house prices and annual earnings to calculate affordability ratios for national and subnational geographies in England and Wales on an annual basis.",
+            
+             "@type": "Article",
+"headLine": "Housing affordability in England and Wales",
+"datePublished": "2025-03-24T00:00:00.000Z",
+"dateModified": "2025-03-24T00:00:00.000Z",
+"author": {
+    "@type": "Person",
+    "name": "Housing Analysis team"
+},
+
+"image": "https://www.ons.gov.uk/chartimage?uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/9e1ecbca",
+
+"mainEntityOfPage": "/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024",
+"publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "Office for National Statistics",  
+    "logo": "https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.png"
+}, 
+            
+            "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024",
+            "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+        }
+    </script>
+
+
+		
+		
+
+	</head>
+	<body class="bulletin">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js' : 'js');</script>
+    <form action="/cookies/accept-all" method="GET" id="global-cookie-message"
+      class="cookies-banner cookies-banner--hidden js-cookies-banner-form clearfix"
+      aria-label="cookie banner">
+    <div class="cookies-banner__wrapper wrapper js-cookies-banner-inform">
+        <div>
+            <div class="cookies-banner__message adjust-font-size--18">
+                <h3 class="cookies-banner__heading">Cookies on ons.gov.uk</h3>
+                <p class="cookies-banner__body">Cookies are small files stored on your device when you visit a website. We use some essential cookies to make this website work.</p>
+                <p class="cookies-banner__body">We would like to set <a href="/cookies">additional cookies</a> to remember your settings and understand how you use the site. This helps us to improve our services.</p>
+            </div>
+            <div class="cookies-banner__buttons">
+                <div class="nojs--hide cookies-banner__button cookies-banner__button--accept">
+                    <button class="btn btn--full-width btn--primary btn--focus margin-right--2 font-weight-700 font-size--17 text-wrap js-accept-cookies" data-gtm-accept-cookies="true" type="submit" data-action="accept" tabindex="0">
+                        Accept additional cookies
+                    </button>
+                </div>
+                <div class="nojs--hide cookies-banner__button cookies-banner__button--reject">
+                    <button class="btn btn--full-width btn--primary btn--focus margin-right--2 font-weight-700 font-size--17 text-wrap js-reject-cookies" data-gtm-accept-cookies="false" type="submit" data-action="reject" tabindex="0">
+                        Reject additional cookies
+                    </button>
+                </div>
+                <div class="cookies-banner__button">
+                    <a href="/cookies">Manage settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden js-cookies-banner-confirmation" tabindex="-1">
+        <div class="cookies-banner__wrapper wrapper">
+            <div class="col">
+                <div class="cookies-banner__message adjust-font-size--18">
+                    <p class="cookies-banner__confirmation-message">
+                        <span class="hidden ons-js-accepted-text">You have accepted all additional cookies.</span>
+                        <span class="hidden ons-js-rejected-text">You have rejected all additional cookies.</span>
+                        <span>You can <a href="/cookies">change your cookie preferences</a> at any time.</span>
+                        <button type="button" class="cookies-banner__button--hide js-hide-cookies-banner">Hide</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBCBVQS"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+        
+        
+		
+
+		
+
+		
+		 						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<header >
+	
+    <a class="skiplink" href="#main" tabindex="0">
+        Skip to main content
+    </a>
+	
+  
+  
+
+	
+	
+	<div id="pagePath" class="hide">/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024</div>
+	
+		<div class="wrapper">
+			<div class="header col-wrap">
+				<div class="col col--lg-one-third col--md-one-third">
+					<a href="/">
+						<!--[if lte IE 8]>
+							<img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.png" alt="Office for National Statistics logo - Homepage">
+						<![endif]-->
+						<img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics logo - Homepage">
+					</a>
+				</div>
+				
+                <div class="col col--lg-two-thirds col--md-two-thirds hide--sm print--hide language--js__container">
+                    
+                    <div class="language">
+                        
+                            <span>English (EN) | </span>
+                            <a href="
+
+
+
+    //cy.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024
+" class="language__link" lang="cy">Cymraeg (CY)</a>
+                        
+                    </div>
+                </div>
+				<div class="secondary-nav col col--lg-two-thirds col--md-two-thirds print--hide">
+					<ul class="secondary-nav__list js-nav-clone__list">
+                        <li class="secondary-nav__item">
+                            <a class="secondary-nav__link  js-nav-clone__link" href="/releasecalendar">Release calendar</a>
+                        </li>
+                        <li class="secondary-nav__item">
+                            <a class="secondary-nav__link  js-nav-clone__link" href="/methodology">Methodology</a>
+                        </li>
+                        <li class="secondary-nav__item">
+                            <a class="secondary-nav__link  js-nav-clone__link" href="/news">Media</a>
+                        </li>
+						<li class="secondary-nav__item">
+							<a class="secondary-nav__link  js-nav-clone__link" href="/aboutus">About</a>
+						</li>
+						<li class="secondary-nav__item">
+							<a class="secondary-nav__link js-nav-clone__link" rel="noopener noreferrer" href="https://blog.ons.gov.uk/">Blog</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	
+
+	
+	
+	<div class="primary-nav print--hide">
+		<nav aria-label="Header links">
+			
+			<ul class="nav--controls">
+				<li class="nav--controls__item">
+					<a href="#nav-primary" id="menu-toggle" aria-controls="nav-primary" aria-expanded="false" class="nav--controls__menu">
+						<span class="nav--controls__text">Menu</span>
+					</a>
+				</li>
+				<li class="nav--controls__item ">
+					<a href="#nav-search" id="search-toggle" aria-controls="nav-search" aria-expanded="false" class="nav--controls__search" aria-label="Search">
+						<span class="nav--controls__text">Search</span>
+					</a>
+				</li>
+			</ul>
+			
+			<ul class="wrapper nav-main--hidden primary-nav__list" id="nav-primary" aria-expanded="false">
+				<li class="primary-nav__item  js-nav hide--sm old-ie--display-block"><a class="primary-nav__link col col--md-7 col--lg-9" href="/">Home</a></li>
+				
+				
+				
+				
+				
+				<li class="primary-nav__item js-nav js-expandable ">
+					<a class="primary-nav__link col col--md-8 col--lg-10" href="/businessindustryandtrade" aria-expanded="false" aria-label="Business, industry and trade sub menu">
+						<span aria-hidden="true" class="expansion-indicator"></span>
+						<span class="submenu-title">
+							Business, industry and trade
+						</span>
+					</a>
+					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+						
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/business" >Business</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/changestobusiness" >Changes to business</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/constructionindustry" >Construction industry</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/itandinternetindustry" >IT and internet industry</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/internationaltrade" >International trade</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/manufacturingandproductionindustry" >Manufacturing and production industry</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/retailindustry" >Retail industry</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/tourismindustry" >Tourism industry</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+				
+				
+				
+				
+				<li class="primary-nav__item js-nav js-expandable ">
+					<a class="primary-nav__link col col--md-8 col--lg-10" href="/economy" aria-expanded="false" aria-label="Economy sub menu">
+						<span aria-hidden="true" class="expansion-indicator"></span>
+						<span class="submenu-title">
+							Economy
+						</span>
+					</a>
+					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+						
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/economicoutputandproductivity" >Economic output and productivity</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/environmentalaccounts" >Environmental accounts</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/governmentpublicsectorandtaxes" >Government, public sector and taxes</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/grossdomesticproductgdp" >Gross Domestic Product (GDP)</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/grossvalueaddedgva" >Gross Value Added (GVA)</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/inflationandpriceindices" >Inflation and price indices</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/investmentspensionsandtrusts" >Investments, pensions and trusts</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/nationalaccounts" >National accounts</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/regionalaccounts" >Regional accounts</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+				
+				
+				
+				
+				<li class="primary-nav__item js-nav js-expandable ">
+					<a class="primary-nav__link col col--md-8 col--lg-10" href="/employmentandlabourmarket" aria-expanded="false" aria-label="Employment and labour market sub menu">
+						<span aria-hidden="true" class="expansion-indicator"></span>
+						<span class="submenu-title">
+							Employment and labour market
+						</span>
+					</a>
+					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+						
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peopleinwork" >People in work</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peoplenotinwork" >People not in work</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="primary-nav__item js-nav js-expandable primary-nav__item--active">
+					<a class="primary-nav__link col col--md-8 col--lg-10" href="/peoplepopulationandcommunity" aria-expanded="false" aria-label="People, population and community sub menu">
+						<span aria-hidden="true" class="expansion-indicator"></span>
+						<span class="submenu-title">
+							People, population and community
+						</span>
+					</a>
+					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+						
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/armedforcescommunity" >Armed forces community</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/birthsdeathsandmarriages" >Births, deaths and marriages</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/crimeandjustice" >Crime and justice</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/culturalidentity" >Cultural identity</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/educationandchildcare" >Education and childcare</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/elections" >Elections</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/healthandsocialcare" >Health and social care</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/householdcharacteristics" >Household characteristics</a>
+						</li>
+						
+						<li class="primary-nav__child-item primary-nav__child-item--active js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/housing" >Housing</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/leisureandtourism" >Leisure and tourism</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/wellbeing" >Measuring progress, well-being and beyond GDP</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/personalandhouseholdfinances" >Personal and household finances</a>
+						</li>
+						
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/populationandmigration" >Population and migration</a>
+						</li>
+						
+					</ul>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				<li class="primary-nav__item  js-nav">
+					<a class="primary-nav__link  col col--md-8 col--lg-10" href="/surveys">
+						Taking part in a survey?
+					</a>
+				</li>
+				<li class="hide--md primary-nav__language">
+					
+						<span>English (EN) | </span>
+						<a href="
+
+
+
+    //cy.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024
+" class="language__link">Cymraeg (CY)</a>
+					
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+	
+		<div class="search nav-search--hidden print--hide" id="searchBar" role="search">
+			<div class="wrapper">
+				<form class="col-wrap search__form" action="/search">
+					<label class="search__label col col--md-23 col--lg-24" for="nav-search">Search for a keyword(s) or time series ID</label>
+					<input type="search" autocomplete="off" class="search__input col col--md-21 col--lg-32" id="nav-search" name="q" value="">
+					<button type="submit" class="search__button col--md-3 col--lg-3" id="nav-search-submit" aria-label="Search">
+						<span class="visuallyhidden">Search</span>
+						<span class="icon icon-search--light"></span>
+					</button>
+				</form>
+			</div>
+		</div>
+	
+	<div class="promo__background--plum-gradient">
+    <div class="wrapper">
+        <div class="banner--half-padding">
+            <p class="margin-top--0 margin-bottom--0 padding-bottom--0 padding-top--0 flex flex-wrap-wrap banner--vertical-center">
+                <a class="flex" href="/census"><img src="https://cdn.ons.gov.uk/assets/images/census-logo/logo-census-2021-white-landscape.svg" title="Census 2021" alt="" class="header__svg-logo margin-right--1" xmlns="http://www.w3.org/2000/svg" focusable="false" width="167" height="32" viewBox="0 0 242 44" aria-labelledby="census-logo-banner" />
+                <a class="margin-top--0 text--white font-size--18 underline-link" href="/census">Data and analysis from Census 2021</a>
+            </p>
+        </div>
+    </div>
+</div>
+	
+</header>
+
+
+
+
+	
+    <div class="page-bulletins background--astral text--white">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        <nav aria-label="Bulletin breadcrumbs">
+          <div class="breadcrumb-bulletins print--hide">
+            <ol class="breadcrumb-bulletins__list">
+              
+                <li class="breadcrumb-bulletins__item">
+                  <span
+                    class="icon icon-arrow-back--light-small hide--md"
+                  ></span>
+                  <a
+                    class="breadcrumb-bulletins__link"
+                    href="/"
+                  >Home</a>
+                  <span
+                    class="icon icon-arrow-forward--light-small hide--sm"
+                  ></span>
+                </li>
+              
+                <li class="breadcrumb-bulletins__item">
+                  <span
+                    class="icon icon-arrow-back--light-small hide--md"
+                  ></span>
+                  <a
+                    class="breadcrumb-bulletins__link"
+                    href="/peoplepopulationandcommunity"
+                  >People, population and community</a>
+                  <span
+                    class="icon icon-arrow-forward--light-small hide--sm"
+                  ></span>
+                </li>
+              
+                <li class="breadcrumb-bulletins__item">
+                  <span
+                    class="icon icon-arrow-back--light-small hide--md"
+                  ></span>
+                  <a
+                    class="breadcrumb-bulletins__link"
+                    href="/peoplepopulationandcommunity/housing"
+                  >Housing</a>
+                  <span
+                    class="icon icon-arrow-forward--light-small hide--sm"
+                  ></span>
+                </li>
+              
+              <li class="breadcrumb-bulletins__item">
+                Housing affordability in England and Wales
+              </li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+		
+<main id="main" role="main" tabindex="-1">
+
+	
+	
+		<div class="page-bulletins background--astral text--white">
+    <div class="wrapper">
+        <div class="col-wrap">
+            <div class="col">
+                <div class="col margin-left--0">
+                    <h1 class="padding-bottom--0 padding-top--0 margin-top--2 font-weight-700 margin-bottom--2 ">Housing affordability in England and Wales: 2024</h1>
+                    <p class="page-bulletins--Summary margin-right-md--2 margin-bottom--3 padding-bottom--0 padding-top--0">
+                    
+                        
+                            Data on house prices and annual earnings to calculate affordability ratios for national and subnational geographies in England and Wales on an annual basis.
+                        
+                    </p>
+                </div>
+            </div> 
+        </div> 
+    </div> 
+    <div class="wrapper">
+        <div class="col-wrap">
+            
+
+    
+    
+        <div class="col alert-release-banner alert-release-banner__latest">
+            <p class="alert-release-banner__title">This is the latest release.
+                <a href="/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/previousreleases">View previous releases</a>
+            </p>
+        </div>
+    
+
+
+            
+            
+            
+                <div class="col show-hide show-hide--dark margin-top--4 js-show-hide">
+                    <div class="alert-bulletins--border">
+                        <div class="js-show-hide__title">
+                            <button class="js-show-hide__button margin-top--2 alert-bulletins--expand-arrow" type="button" aria-expanded="false" aria-controls="collapsible-0">
+                                <span class="icon icon-info icon-info--info-box alert-bulletins--info-box"></span>
+
+                                <h2 class="show-hide__title alert-bulletins--warning__title">
+                                    
+                                    
+                                        
+                                            Correction
+                                        
+                                    
+                                </h2>
+                            </button>
+                        </div>
+
+                        <div class="js-show-hide__content ">
+                            
+                                <div class="show-hide__content alert-bulletins--warning__content section__content--markdown">
+                                    <section>
+                                        
+                                        
+                                            <p class="alert-bulletins__date">10 October 2025 15:00</p>
+                                            <p>We have corrected an error in Figure 2. The previous version's lower quartile house prices contained estimates for existing dwellings rather than all dwellings.</p><p>This happened because of human error, which was not detected at the time.</p><p>This error was first announced on 2nd October.</p>
+                                            <a class="btn btn--tertiary margin-bottom-sm--3 margin-bottom-md--3 print--hide" href="/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/previous/v1">View superseded version</a>
+                                        
+                                    </section>
+                                </div>
+                            
+                            
+                        </div>
+                    </div>
+
+                </div>
+            
+            
+        </div>
+    </div>
+    <div class="wrapper">
+        
+        <div class="col-wrap margin-top--3 margin-left--0">
+            
+            <p class="col  col--md-12 col--lg-15 margin-bottom-sm--1 margin-bottom-md--3 margin-top-sm--1 padding-bottom--0 padding-top--0">
+                <span class="font-weight-700">Contact: </span><br/><a href="mailto:better.info@ons.gov.uk" class="text--white"><span class="visuallyhidden">Email </span>Housing Analysis team</a>
+            </p>
+
+            <p class="col  col--md-one-third col--lg-one-third margin-bottom-sm--1 margin-bottom-md--3 margin-top--0 padding-bottom--0 padding-top--0">
+                <span class="font-weight-700">Release date: </span><br/>24 March 2025<br/>
+                
+            </p>
+
+            <p class="col  col--md-one-third col--lg-one-third margin-bottom-sm--3 margin-bottom-md--3 margin-top--0 padding-bottom--0 padding-top--0">
+                <span class="font-weight-700">Next release: </span><br/>March 2026
+            </p>
+        </div>
+    </div>
+</div>
+
+	
+
+<div class="page-content">
+	
+    <div class="wrapper">
+        
+        <div class="col-wrap border-bottom--iron-md">
+            
+            <div class="col col--md-31 col--lg-41 margin-left-md--1">
+	<div class="table-of-contents print--avoid-break">
+		<h2 class="table-of-contents__title">Table of contents</h2>
+		<ol id="toc" class="table-of-contents__list">
+			
+			<li class="table-of-contents__item">
+				<a href="#main-points" class="js-scroll">Main points</a>
+			</li>
+			
+			<li class="table-of-contents__item">
+				<a href="#housing-affordability-overview" class="js-scroll">Housing affordability overview</a>
+			</li>
+			
+			<li class="table-of-contents__item">
+				<a href="#housing-affordability-in-england-and-wales" class="js-scroll">Housing affordability in England and Wales</a>
+			</li>
+			
+			<li class="table-of-contents__item">
+				<a href="#factors-influencing-housing-affordability" class="js-scroll">Factors influencing housing affordability</a>
+			</li>
+			
+			<li class="table-of-contents__item">
+				<a href="#local-authority-housing-affordability-analysis" class="js-scroll">Local authority housing affordability analysis</a>
+			</li>
+			
+			<li class="table-of-contents__item">
+				<a href="#local-authority-affordability-within-regions" class="js-scroll">Local authority affordability within regions</a>
+			</li>
+			
+			<li class="table-of-contents__item">
+				<a href="#alternative-house-price-earnings-and-affordability-estimates" class="js-scroll">Alternative house price, earnings, and affordability estimates</a>
+			</li>
+			
+			<li class="table-of-contents__item">
+				<a href="#data-on-housing-affordability" class="js-scroll">Data on housing affordability</a>
+			</li>
+			
+			<li class="table-of-contents__item">
+				<a href="#glossary" class="js-scroll">Glossary</a>
+			</li>
+			
+			<li class="table-of-contents__item">
+				<a href="#data-sources-and-quality" class="js-scroll">Data sources and quality</a>
+			</li>
+			
+			<li class="table-of-contents__item">
+				<a href="#related-links" class="js-scroll">Related links</a>
+			</li>
+			
+			<li class="table-of-contents__item">
+				<a href="#cite-this-bulletin" class="js-scroll">Cite this bulletin</a>
+			</li>
+			
+			
+			
+		</ol>
+	</div>
+</div>
+            
+            
+            	
+
+<div class="col col--md-15 col--lg-16 margin-bottom-sm--2 margin-top-md--7 margin-bottom-md--2 margin-left-lg--2 padding-bottom-sm--2 padding-left-sm--1 padding-bottom-md--1 border-top--iron-sm border-right--iron-sm border-bottom--iron-sm border-left--iron-sm border-top--iron-md border-right--iron-md border-bottom--iron-md border-left--iron-md js-print-pdf print--hide">
+    <p class="text-right--md padding-top-md--0 padding-bottom-md--0 height--5 margin-bottom-md--0 print--hide nojs--hide js--show">
+        <a href="" class="link-complex nojs--hide js--show js-print-page">
+            Print this <span class="lowercase">
+Statistical bulletin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span>
+        </a>
+        <span class="icon icon-print--dark"></span>
+    </p>
+    <p class="text-right--md padding-top-md--0 padding-bottom-md--0 height--5 margin-top-md--1 print--hide">
+        <a href="/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/pdf" class="link-complex js-pdf-dl-link" aria-label="Download Housing affordability in England and Wales as PDF">
+            Download as PDF
+        </a>
+        <span class="icon icon-download--dark"></span>
+    </p>
+</div>
+            
+        </div>
+
+		
+		<div class="hide--md margin-top-sm--1">
+
+
+
+	<div class=" margin-bottom-sm--2 margin-bottom-md--2 print--hide">
+		<a class="btn btn--primary btn--full-width" href="/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/relateddata" data-gtm-title="" data-gtm-type="related-data">
+			
+			
+
+			
+			
+				View all data used in this <span class="lowercase">
+Statistical bulletin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span>
+			
+
+			
+			
+		</a>
+	</div>
+</div>
+
+        
+        <article class="col col--md-36 col--lg-39 page-content__main-content padding-bottom">
+            
+                <div id="main-points" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">1.</span> Main points</h2>
+                        </header>
+                        <ul>
+  <li><p>In 2024, the median average home in England, at £290,000, cost 7.7 times the median average earnings of a full-time employee (£37,600); in Wales the average home (£201,000) was 5.9 times annual earnings (£34,300).</p></li>
+  <li><p>Affordability in England and Wales in 2024 has returned to its pre-coronavirus (COVID-19) pandemic levels after a sharp increase between 2020 and 2021 (worsening affordability); median house sales prices have increased by 1% since 2021, while average earnings have increased by 20%.</p></li>
+  <li><p>In 2024, 9% of local authorities (LAs) (27) had homes bought for less than five times workers' earnings on average and were therefore deemed affordable; this is the highest proportion since 2015, but well below that at the start of the series in 1997 (88% of areas).</p></li>
+  <li><p>Housing affordability improved in 289 of the 318 LAs in England and Wales (91%) and worsened in 28 (9%) since 2023.</p></li>
+  <li><p>The most affordable LAs in 2024 were Blaenau Gwent (with a ratio of 3.8), Burnley (3.9) and Blackpool (3.9); the least affordable was Kensington and Chelsea (27.1, which was about seven times less affordable).</p></li>
+  <li><p>Between 2019 and 2024, 4 of the 10 largest increases in affordability ratios (worsening affordability) were in the East Midlands, while the 10 largest decreases in affordability ratios have all occurred in LAs in London.</p></li>
+</ul>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+                <div id="housing-affordability-overview" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">2.</span> Housing affordability overview</h2>
+                        </header>
+                        <p>This release produces timely, consistent local estimates that can be used for housing policy. Our <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2023/relateddata">accompanying reference tables</a> provide:</p>
+<ul>
+  <li><p>affordability ratios based on earnings estimates on a workplace basis (where people work) as used in this bulletin, or residence basis (where they live) at median and lower quartiles</p></li>
+  <li><p>five-year average affordability ratios, for the updated standard method for <a href="https://www.gov.uk/guidance/housing-and-economic-development-needs-assessments">assessing local housing need</a></p></li>
+  <li><p>sales prices for all dwellings, existing dwellings and new dwellings, at median and lower quartile, by property type</p></li>
+  <li><p>data on the number of sales, which previously formed part of our House price statistics for small area (HPSSA) release and are now published as datasets accompanying this bulletin</p></li>
+  <li><p>house price and sales volume data are available for a range of geographies including current and former local authorities, counties, combined authorities, Middle layer Super Output Areas (MSOAs), and national parks</p></li>
+</ul><p>This bulletin presents analysis of our <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/ratioofhousepricetoworkplacebasedearningslowerquartileandmedian">workplace-based earnings affordability for all dwellings dataset</a>, which is used in England in the updated standard method for <a href="https://www.gov.uk/guidance/housing-and-economic-development-needs-assessments">assessing local housing need</a>.</p>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+                <div id="housing-affordability-in-england-and-wales" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">3.</span> Housing affordability in England and Wales</h2>
+                        </header>
+                        <p>Affordability ratios are calculated by comparing earnings from mid-April each year with the prices of homes that sold in the corresponding 12-month period.</p><p>We use a threshold of five years of earnings as a broad indicator of affordability. This is described in our <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/methodologies/housingaffordabilityinenglandandwalesqmi#quality-characteristics-of-the-housing-affordability-in-england-and-wales-data">Housing affordability in England and Wales Quality and Methodology Information (QMI)</a>, alongside our definitions and data sources.</p><p>
+<div class="markdown-table-container print--avoid-break">
+    <div class="scrollable-container" tabindex="0">
+        <div class="markdown-table-wrap">
+            <figure class="figure" id="table-f3f8e947">
+<table class="table">
+<caption class="table__caption">Table 1: Affordability ratios in England and Wales, 2024 </caption>
+<colgroup><col/><col/><col/><col/><col/></colgroup>
+<tr class="table__header-row table__nowrap"><td class="align-left"></td><th scope="col" class="align-right">Median House<br/>price (12 months<br/>to Sep 2024)</th><th scope="col" class="align-right">Median Earnings</th><th scope="col" class="align-right">2024<br/>Affordability<br/>Ratio</th><th scope="col" class="align-right">Change in ratio<br/>from 2023</th></tr>
+<tr><th scope="row" class="table__nowrap align-left">England</th><td class="align-right">£290,000</td><td class="align-right">£37,600</td><td class="align-right">7.7</td><td class="align-right">Decrease from 8.4,<br/>significant</td></tr>
+<tr><th scope="row" class="table__nowrap align-left">Wales</th><td class="align-right">£201,000</td><td class="align-right">£34,300</td><td class="align-right">5.9</td><td class="align-right">Decrease from 6.2,<br/>not significant</td></tr>
+</table><footer class="figure__footer">
+<p class="figure__source">Source: House Price Statistics for Small Areas and Annual Survey of Hours and Earnings from the Office for National Statistics  </p>
+</footer>
+</figure>
+
+        </div>
+    </div>
+
+    <h4 class="print--hide font-size--h6 padding-top--0"><span role="text">Download this table <span class="visuallyhidden">Table 1: Affordability ratios in England and Wales, 2024 </span></span></h4>
+    <a href="/download/table?format=xlsx&uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/f3f8e947.json" title="Download as xls" class="btn btn--primary print--hide" data-gtm-title="Table 1: Affordability ratios in England and Wales, 2024 " data-gtm-type="download-table-xlsx" aria-label="Download Table 1: Affordability ratios in England and Wales, 2024  as xls">.xls</a>
+    <a href="/download/table?format=csv&uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/f3f8e947.json" title="Download as csv" class="btn btn--primary print--hide" data-gtm-title="Table 1: Affordability ratios in England and Wales, 2024 " data-gtm-type="download-table-csv" aria-label="Download Table 1: Affordability ratios in England and Wales, 2024  as csv">.csv</a>
+</div></p><p>For information on statistical significance, see our <a href="https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/uncertaintyandhowwemeasureit#:~:text=Statistical%20significance,-We%20can%20use&text=A%20result%20is%20said%20to,variable%20nature%20of%20the%20samples.">Uncertainty and how we measure it release</a>.</p><p>
+
+
+  
+
+    <div class="markdown-chart-container panel--bottom-mar print--avoid-break">
+
+      <h3 class="flush--third--vertical font-size--18 padding-top--0 margin-bottom--1">Figure 1: House sale prices have become more affordable since 2021, and have returned to pre-pandemic levels of affordability in England and Wales </h3>
+        
+            <h4 class="flush--third--bottom font-size--16 padding-top--0 margin-top--0">Housing affordability ratio by country, 1997 to 2024</h4>
+        
+
+      <div class="scrollable-container">
+        <div id="chart-9e1ecbca" data-filename="9e1ecbca" data-uri="/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/9e1ecbca" class="markdown-chart">
+            <!--[if gt IE 8]><!--><noscript><!--[endif]-->
+            <img src="/chartimage?uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/9e1ecbca&width=&hideSource=true" alt="" />
+            <!--[if gt IE 8]><!--></noscript><!--[endif]-->
+        </div>
+      </div>
+  
+  
+
+
+
+
+
+
+  <h4 class="flush--third--bottom font-size--h6 clear-left">Source: House Price Statistics for Small Areas and Annual Survey of Hours and Earnings from the Office for National Statistics</h4>
+      <div id="notes-9e1ecbca" class="notes-holder-js">
+  
+      </div>
+  
+    <h4 class="print--hide padding-top--0 margin-top--0 font-size--h6 clear-left"><span role="text">Download this chart <span class="visuallyhidden">Figure 1: House sale prices have become more affordable since 2021, and have returned to pre-pandemic levels of affordability in England and Wales </span></span></h4>
+
+    <a class="btn btn--primary print--hide js-chart-image-src" data-filename="9e1ecbca" href="/chartimage?uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/9e1ecbca" download="Figure 1: House sale prices have become more affordable since 2021, and have returned to pre-pandemic levels of affordability in England and Wales " data-gtm-title="Figure 1: House sale prices have become more affordable since 2021, and have returned to pre-pandemic levels of affordability in England and Wales " data-gtm-type="download-chart-image"  aria-label="Download Figure 1: House sale prices have become more affordable since 2021, and have returned to pre-pandemic levels of affordability in England and Wales  as an image">Image</a>
+      
+    <a class="btn btn--primary print--hide" title="Download as csv"
+    href="/generator?uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/9e1ecbca&format=csv" 
+    data-gtm-title="Figure 1: House sale prices have become more affordable since 2021, and have returned to pre-pandemic levels of affordability in England and Wales " 
+    data-gtm-type="download-chart-csv"
+    data-gtm-download-file="timeseries-generated-file"
+    data-gtm-download-type="csv"
+    aria-label="Download Figure 1: House sale prices have become more affordable since 2021, and have returned to pre-pandemic levels of affordability in England and Wales  as csv"
+>
+    .csv
+</a>
+    <a class="btn btn--primary print--hide" title="Download as xls"
+    href="/generator?uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/9e1ecbca&format=xls" 
+    data-gtm-title="Figure 1: House sale prices have become more affordable since 2021, and have returned to pre-pandemic levels of affordability in England and Wales " 
+    data-gtm-type="download-chart-xls"
+    data-gtm-download-file="timeseries-generated-file"
+    data-gtm-download-type="xls"
+    aria-label="Download Figure 1: House sale prices have become more affordable since 2021, and have returned to pre-pandemic levels of affordability in England and Wales  as xls"
+>
+    .xls
+</a>
+
+</div>
+</p><p>Figure 1 shows that affordability ratios doubled in England from the start of the series in 1997 to 2007, stayed at a similar level until around 2013, and then broadly increased until 2018.</p><p>There was a pronounced increase between 2020 and 2021, mainly because of an increase in house prices. However, three years of decreases have taken affordability in 2024 back to similar levels to 2018, 2019 and 2020.</p><p>In England, affordability ratios are highest (least affordable) in London. London's affordability ratio peaked at 12.9 in 2021, but by 2024 had returned to 11.1, which was a similar level to 2015.</p><p>In Wales, affordability ratios doubled from 1997 to 2005 and peaked in 2007 at 6.6. They have remained between 5.5 and 6.5 since 2009, with a less pronounced increase and decrease in the past four years than in England.</p>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+                <div id="factors-influencing-housing-affordability" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">4.</span> Factors influencing housing affordability</h2>
+                        </header>
+                        <p>The average (median) price of homes sold in England and Wales decreased by £7,500, or 2.6%, between the 12 months ending September 2023 and the 12 months ending September 2024. Meanwhile, the average earnings increased by £2,400, or 5.6%.</p><p>These recent changes are not typical of the full series. Figure 2 shows how five times average earnings compared to house prices over time. The House price statistics for small areas (HPSSA) data used here are not mix adjusted, so price variations may be a combination of true price changes and differences in the mix of housing types and trends. They will therefore differ from those in our <a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/previousreleases">Private rent and house prices, UK bulletins</a>, which are mix adjusted and comparable over time.</p><h5>Figure 2: While earnings have doubled since 1997, house prices have more than quadrupled</h5><h6>House sale prices and 5 years’ worth of earnings, England and Wales, 1997 to 2024</h6><p><div class="js--show">
+
+    <div class="pym-interactive" id="b26-422f-aa8d-300224f801a1" data-url="/visualisations/dvc3204/fig2/index.html" data-title="Figure 2: While earnings have doubled since 1997, house prices have more than quadrupled"></div>
+
+    <details class="details">
+        <summary class="details__summary" role="button" aria-label="Figure 2: While earnings have doubled since 1997, house prices have more than quadrupled embed code">Embed code</summary>
+        <div class="details__body">
+            <label class="embed-code__label" for="embed-b26-422f-aa8d-300224f801a1">Embed this interactive</label>
+            <input class="embed-code__code width-md--31"
+        value='<iframe width="100%" src="https://www.ons.gov.uk/visualisations/dvc3204/fig2/index.html"></iframe>'
+                   id="embed-b26-422f-aa8d-300224f801a1"
+                   name="embed-b26-422f-aa8d-300224f801a1"
+                   readonly
+            />
+            <span class="embed-code__success-container">
+                <button id="" data-id="b26-422f-aa8d-300224f801a1" type="button" class="btn btn--primary embed-code__button js-embed-code-copy">Copy</button>
+                <span role="status"></span>
+            </span>
+        </div>
+    </details>
+
+</div>
+</p><h6>Notes</h6><p>1.   Comparability across time is limited for earnings: the coronavirus (COVID-19) pandemic affected data collection in 2020 and 2021 ; in 2021 new occupation coding was applied; and methodological improvements have been applied to high-earner estimates in 2023 and 2024.  </p><h6>Download the data</h6>
+<form action=https://www.ons.gov.uk/visualisations/dvc3204/fig2/datadownload.xlsx >
+
+    <input type="submit" value="Download Figure 2 data (xlsx,21KB)" class="btn btn--primary" style= "margin-bottom: 20px; text-decoration: underline; font-size: 18px; font-weight: 400; line-height: 32px;"/>
+
+</form><p>Figure 2 shows that changes in house prices are the main cause of the change in affordability. However, house prices have risen by 1% since 2021, a much smaller rise than the 20% increase in earnings. </p><p>At a national level, homes were affordable (selling for less than five times local earnings) on average at the start of the series until 2002, and not affordable thereafter. Lower quartile earnings have stayed closer to lower quartile house prices but have been unaffordable since 2003.</p>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+                <div id="local-authority-housing-affordability-analysis" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">5.</span> Local authority housing affordability analysis</h2>
+                        </header>
+                        <p>The most affordable Local Authority (LA) areas in 2024 were Blaenau Gwent, Burnley, and Blackpool, which had affordability ratios below four. Using an “affordability threshold” of five in 2024 showed that:</p>
+<ul>
+  <li>27 areas (9%) had homes selling for less than five times full-time workers’ earnings (the most affordable group)</li>
+  <li>this was an increase from 19 areas (6%) in 2023 in England and Wales; this is the highest number since 2015</li>
+  <li>there was a substantial decrease since 1997; this was the start of our series, when 255 areas (88%) had this ratio.</li>
+</ul><h4>Figure 3: Long-term house price growth has led to reduced affordability</h4><h6>Housing affordability ratio, earnings, and house prices by local authority district, England and Wales, 1997 to 2024</h6><p><div class="js--show">
+
+    <div class="pym-interactive" id="de9-4f12-9d7e-a8427dec3aaa" data-url="/visualisations/dvc3204/fig3/index.html" data-title="Figure 3: Long-term house price growth has led to reduced affordability"></div>
+
+    <details class="details">
+        <summary class="details__summary" role="button" aria-label="Figure 3: Long-term house price growth has led to reduced affordability embed code">Embed code</summary>
+        <div class="details__body">
+            <label class="embed-code__label" for="embed-de9-4f12-9d7e-a8427dec3aaa">Embed this interactive</label>
+            <input class="embed-code__code width-md--31"
+        value='<iframe width="100%" src="https://www.ons.gov.uk/visualisations/dvc3204/fig3/index.html"></iframe>'
+                   id="embed-de9-4f12-9d7e-a8427dec3aaa"
+                   name="embed-de9-4f12-9d7e-a8427dec3aaa"
+                   readonly
+            />
+            <span class="embed-code__success-container">
+                <button id="" data-id="de9-4f12-9d7e-a8427dec3aaa" type="button" class="btn btn--primary embed-code__button js-embed-code-copy">Copy</button>
+                <span role="status"></span>
+            </span>
+        </div>
+    </details>
+
+</div>
+</p><h6>Notes</h6><p>1.   Comparability across time is limited for earnings: the coronavirus (COVID-19) pandemic affected data collection in 2020 and 2021; in 2021 new occupation coding was applied; and methodological improvements have been applied to high-earner estimates in 2023 and 2024.  </p><h6>Download the data</h6>
+<form action=https://www.ons.gov.uk/visualisations/dvc3204/fig3/datadownload.xlsx >
+
+    <input type="submit" value="Download Figure 3 data (xlsx,413KB)" class="btn btn--primary" style= "margin-bottom: 20px; text-decoration: underline; font-size: 18px; font-weight: 400; line-height: 32px;"/>
+
+</form><p>The number of areas with the least affordable housing (a ratio of 12 or more) decreased from a peak of 76 in 2021 to 34 in 2024 (11% of areas). This is the lowest level since 2014. Of 33 London LAs, 30 (91%) had affordability ratios above 12 in 2024.</p><p>The least affordable area remained Kensington and Chelsea, whose ratio was 27.1. This was down from 33.4 in 2023 and a peak of 44.0 in 2018, reflecting the median house price being its lowest since 2016. However, house prices remain proportionately much higher than earnings, and it is still a notable outlier.</p><p>Users should note that these ratios are based on area-level averages, and that affordability patterns change if looking at wider housing markets or below LA level. For example, there were 251 local authorities (74.7%) that contained at least one local area with an affordability ratio of five or below, as shown in our <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/housingaffordabilityforlocalareasinenglandandwales/yearendingmarch2020">Housing affordability for local areas in England and Wales bulletin</a>. This compares with 91% of local authority areas that are on average above the affordability threshold of five, as described in this bulletin.</p><h4>Figure 4: Divergence in house prices compared with earnings in local authorities is becoming larger over time</h4><h6>Ratio of median house prices to median workplace-based annual earnings by local authority district, England and Wales, 1997 to 2024</h6><p><div class="js--show">
+
+    <div class="pym-interactive" id="785-494d-8ba8-7a3924fac556" data-url="/visualisations/dvc3204/fig4/index.html" data-title="Figure 4: Divergence in house prices compared with earnings in local authorities is becoming larger over time"></div>
+
+    <details class="details">
+        <summary class="details__summary" role="button" aria-label="Figure 4: Divergence in house prices compared with earnings in local authorities is becoming larger over time embed code">Embed code</summary>
+        <div class="details__body">
+            <label class="embed-code__label" for="embed-785-494d-8ba8-7a3924fac556">Embed this interactive</label>
+            <input class="embed-code__code width-md--31"
+        value='<iframe width="100%" src="https://www.ons.gov.uk/visualisations/dvc3204/fig4/index.html"></iframe>'
+                   id="embed-785-494d-8ba8-7a3924fac556"
+                   name="embed-785-494d-8ba8-7a3924fac556"
+                   readonly
+            />
+            <span class="embed-code__success-container">
+                <button id="" data-id="785-494d-8ba8-7a3924fac556" type="button" class="btn btn--primary embed-code__button js-embed-code-copy">Copy</button>
+                <span role="status"></span>
+            </span>
+        </div>
+    </details>
+
+</div>
+</p><h6>Notes</h6>
+<ol>
+  <li>Comparability across time is limited for earnings: the coronavirus (COVID-19) pandemic affected data collection in 2020 and 2021; in 2021 new occupation coding was applied; and methodological improvements have been applied to high-earner estimates in 2023 and 2024</li>
+  <li>7% of local authority estimates are not available for 1997 to 2002, owing to local authority boundary changes</li>
+</ol><h6>Download the data</h6>
+<form action=https://www.ons.gov.uk/visualisations/dvc3204/fig4/datadownload.xlsx >
+
+    <input type="submit" value="Download Figure 4 data (xlsx,155KB)" class="btn btn--primary" style= "margin-bottom: 20px; text-decoration: underline; font-size: 18px; font-weight: 400; line-height: 32px;"/>
+
+</form><p>Figure 4 shows that some areas have seen affordability ratios increase faster than others. Out of 318 LA areas in England and Wales in 2024:</p>
+<ul>
+  <li><p>housing affordability improved in 289 areas (91%), and worsened in 28 (9%), compared with 2023 (data were not available for the Isles of Scilly)</p></li>
+  <li><p>average house prices increased in 20% of areas, compared with 2023, while average earnings increased in 87%</p></li>
+  <li><p>affordability has worsened in every LA area over the 25 years for which the series is available</p></li>
+</ul><p>More subtle trends can be seen when looking at affordability over the last five years, including that:</p>
+<ul>
+  <li><p>the biggest increases in affordability ratio (worsening affordability) occurred in Staffordshire Moorlands in the West Midlands (from 5.8 in 2019 to 7.3 in 2024)</p></li>
+  <li><p>4 of the 10 biggest increases were in the East Midlands</p></li>
+  <li><p>the 10 biggest decreases in affordability ratios in the past five years have all occurred in LAs in London</p></li>
+</ul>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+                <div id="local-authority-affordability-within-regions" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">6.</span> Local authority affordability within regions</h2>
+                        </header>
+                        <h4>Figure 5: London’s most affordable area was less affordable than the North East’s least affordable area</h4><h6>Range of median housing affordability ratio in local authorities for English regions and Wales, England and Wales, 2024</h6><p><div class="js--show">
+
+    <div class="pym-interactive" id="7d0-43fb-ae5c-af01c18c104b" data-url="/visualisations/dvc3204/fig5/index.html" data-title="Figure 5: The most affordable area in London was still less affordable than the least affordable area in the North East for both median and lower quartile affordability  "></div>
+
+    <details class="details">
+        <summary class="details__summary" role="button" aria-label="Figure 5: The most affordable area in London was still less affordable than the least affordable area in the North East for both median and lower quartile affordability   embed code">Embed code</summary>
+        <div class="details__body">
+            <label class="embed-code__label" for="embed-7d0-43fb-ae5c-af01c18c104b">Embed this interactive</label>
+            <input class="embed-code__code width-md--31"
+        value='<iframe width="100%" src="https://www.ons.gov.uk/visualisations/dvc3204/fig5/index.html"></iframe>'
+                   id="embed-7d0-43fb-ae5c-af01c18c104b"
+                   name="embed-7d0-43fb-ae5c-af01c18c104b"
+                   readonly
+            />
+            <span class="embed-code__success-container">
+                <button id="" data-id="7d0-43fb-ae5c-af01c18c104b" type="button" class="btn btn--primary embed-code__button js-embed-code-copy">Copy</button>
+                <span role="status"></span>
+            </span>
+        </div>
+    </details>
+
+</div>
+</p><h6>Download the data</h6>
+<form action=https://www.ons.gov.uk/visualisations/dvc3204/fig5/datadownload.xlsx >
+
+    <input type="submit" value="Download Figure 5 data (xlsx,35KB)" class="btn btn--primary" style= "margin-bottom: 20px; text-decoration: underline; font-size: 18px; font-weight: 400; line-height: 32px;"/>
+
+</form><p>Figure 5 shows that the North East had a very tight distribution of affordability ratios, with more LAs having affordability ratios below five in 2024 than above five. There were only four LAs in the North East, Yorkshire and The Humber, and North West combined that had ratios higher than eight.</p><p>While this bulletin has focused on averages, we can compare individual house sale prices to local earnings for a more precise measure of the proportion that are affordable at the time of the sale. Figure 6 shows how regional affordability has changed over time using the proportion of homes that were sold for less than five times local median earnings.</p><h4>Figure 6: Affordability of homes has diverged over time between regions, with 3% of homes in London, and 50% in the North East “affordable” in 2024</h4><h6>Proportion of homes sold for less than five times local authority earnings, grouped by Wales and English regions, 1997 to 2024</h6><p><div class="js--show">
+
+    <div class="pym-interactive" id="d64-4d17-958e-38c4010fb44b" data-url="/visualisations/dvc3204/fig6/index.html" data-title="Figure 6:  Over time, the proportion of homes sold for less than 5 times median earnings has diverged between regions, with 3% of homes in London, and 50% in the North East &#x27;affordable&#x27; in 2024"></div>
+
+    <details class="details">
+        <summary class="details__summary" role="button" aria-label="Figure 6:  Over time, the proportion of homes sold for less than 5 times median earnings has diverged between regions, with 3% of homes in London, and 50% in the North East &#x27;affordable&#x27; in 2024 embed code">Embed code</summary>
+        <div class="details__body">
+            <label class="embed-code__label" for="embed-d64-4d17-958e-38c4010fb44b">Embed this interactive</label>
+            <input class="embed-code__code width-md--31"
+        value='<iframe width="100%" src="https://www.ons.gov.uk/visualisations/dvc3204/fig6/index.html"></iframe>'
+                   id="embed-d64-4d17-958e-38c4010fb44b"
+                   name="embed-d64-4d17-958e-38c4010fb44b"
+                   readonly
+            />
+            <span class="embed-code__success-container">
+                <button id="" data-id="d64-4d17-958e-38c4010fb44b" type="button" class="btn btn--primary embed-code__button js-embed-code-copy">Copy</button>
+                <span role="status"></span>
+            </span>
+        </div>
+    </details>
+
+</div>
+</p><h6>Notes</h6>
+<ol>
+  <li>Comparability across time is limited for earnings: the coronavirus (COVID-19) pandemic affected data collection in 2020 and 2021. In 2021, new occupation coding was applied, and methodological improvements have been applied to 2023 and 2024.</li>
+  <li>7% of local authority estimates are not available for 1997 to 2002, because of local authority boundary changes.</li>
+</ol><h6>Download the data</h6>
+<form action=https://www.ons.gov.uk/visualisations/dvc3204/fig6/datadownload.xlsx >
+
+    <input type="submit" value="Download Figure 6 data (xlsx,25KB)" class="btn btn--primary" style= "margin-bottom: 20px; text-decoration: underline; font-size: 18px; font-weight: 400; line-height: 32px;"/>
+
+</form><p>Figure 6 shows that over time, clear groupings of regions have formed relating to affordability. Distinct regional patterns emerge from 2005, with London and the North East at the extremes and East Midlands and the West Midlands in the middle. Since 2021, earnings increasing faster than house prices have resulted in more sales being affordable in all English regions and in Wales. </p><p>Currently, the proportions of “affordable” sales in northern English regions and Wales are in a distinct group from those of London and the south. For example, 57.4% of homes sold in London were sold for less than five times average earnings in 1997, while the proportion was just 3.0% in 2024. Conversely, 85.4% of homes in the North East were “affordable” in 1997, and 49.9% in 2024.</p>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+                <div id="alternative-house-price-earnings-and-affordability-estimates" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">7.</span> Alternative house price, earnings, and affordability estimates</h2>
+                        </header>
+                        <h3>New and existing dwellings</h3><p>There is interest in the effect of new house building on housing affordability. Across England and Wales, newly built dwellings were, on average, more expensive than existing properties. In the year to September 2024, the average new dwelling sold for £350,000, compared with £280,000 for an existing dwelling. However, existing dwellings make up most sales, with new builds being just 4.7% of sales in England and 2.8% of sales in Wales in the year to September 2024.</p><p>
+
+
+  
+
+    <div class="markdown-chart-container panel--bottom-mar print--avoid-break">
+
+      <h3 class="flush--third--vertical font-size--18 padding-top--0 margin-bottom--1">Figure 7:  New dwellings sell in much lower numbers than existing dwellings, but sale volumes are less volatile</h3>
+        
+            <h4 class="flush--third--bottom font-size--16 padding-top--0 margin-top--0">Numbers of residential dwellings sales, new and existing dwellings, England and Wales, rolling 12-month quarters</h4>
+        
+
+      <div class="scrollable-container">
+        <div id="chart-912a1cb7" data-filename="912a1cb7" data-uri="/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/912a1cb7" class="markdown-chart">
+            <!--[if gt IE 8]><!--><noscript><!--[endif]-->
+            <img src="/chartimage?uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/912a1cb7&width=&hideSource=true" alt="" />
+            <!--[if gt IE 8]><!--></noscript><!--[endif]-->
+        </div>
+      </div>
+  
+  
+
+
+
+
+
+
+  <h4 class="flush--third--bottom font-size--h6 clear-left">Source: House Price Statistics for Small Areas and Annual Survey of Hours and Earnings from the Office for National Statistics  </h4>
+      <div id="notes-912a1cb7" class="notes-holder-js">
+  
+      </div>
+  
+    <h4 class="print--hide padding-top--0 margin-top--0 font-size--h6 clear-left"><span role="text">Download this chart <span class="visuallyhidden">Figure 7:  New dwellings sell in much lower numbers than existing dwellings, but sale volumes are less volatile</span></span></h4>
+
+    <a class="btn btn--primary print--hide js-chart-image-src" data-filename="912a1cb7" href="/chartimage?uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/912a1cb7" download="Figure 7:  New dwellings sell in much lower numbers than existing dwellings, but sale volumes are less volatile" data-gtm-title="Figure 7:  New dwellings sell in much lower numbers than existing dwellings, but sale volumes are less volatile" data-gtm-type="download-chart-image"  aria-label="Download Figure 7:  New dwellings sell in much lower numbers than existing dwellings, but sale volumes are less volatile as an image">Image</a>
+      
+    <a class="btn btn--primary print--hide" title="Download as csv"
+    href="/generator?uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/912a1cb7&format=csv" 
+    data-gtm-title="Figure 7:  New dwellings sell in much lower numbers than existing dwellings, but sale volumes are less volatile" 
+    data-gtm-type="download-chart-csv"
+    data-gtm-download-file="timeseries-generated-file"
+    data-gtm-download-type="csv"
+    aria-label="Download Figure 7:  New dwellings sell in much lower numbers than existing dwellings, but sale volumes are less volatile as csv"
+>
+    .csv
+</a>
+    <a class="btn btn--primary print--hide" title="Download as xls"
+    href="/generator?uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/912a1cb7&format=xls" 
+    data-gtm-title="Figure 7:  New dwellings sell in much lower numbers than existing dwellings, but sale volumes are less volatile" 
+    data-gtm-type="download-chart-xls"
+    data-gtm-download-file="timeseries-generated-file"
+    data-gtm-download-type="xls"
+    aria-label="Download Figure 7:  New dwellings sell in much lower numbers than existing dwellings, but sale volumes are less volatile as xls"
+>
+    .xls
+</a>
+
+</div>
+</p><p>Figure 7 shows that there is more variation over time in the number of sales of existing dwellings, than with new builds. </p><h3>Workplace and residence-based earnings</h3><p>As in previous years, workplace-based earnings are lower than residence-based earnings in LAs with high proportions of London commuters, such as Richmond-upon-Thames, St Albans, and Southend-On-Sea.</p><p>The patterns in differences between residence-based and workplace-based affordability are similar, despite homeworking becoming more common following the coronavirus (COVID-19) pandemic.</p><h3>Other measures of housing affordability</h3><p>We publish a range of affordability ratios because not all users will require median average workplace-based earnings. Users interested in the minimum wage could apply the April 2024 <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2024#glossary">National Living Wage rate</a> (£11.44 for employees aged 23 years and over, or £22,300 for a 37.5 hour week). An average home in 2024 cost 12.7 times these earnings.</p><p>Our <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingpurchaseaffordabilitygreatbritain/latest">Housing Purchase Affordability bulletin</a> covers the whole of the UK and better replicates mortgage lending in using estimates of household income, and is for wider context and research purposes.</p><p>Our <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/privaterentalaffordabilityengland/previousreleases">Private rental affordability, England, Wales and Northern Ireland bulletin</a>s cover the affordability of living in a household in that tenure.</p><p>Our <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/housingaffordabilityforlocalareasinenglandandwales/yearendingmarch2020">Housing affordability for local areas in England and Wales: year ending March 2020 article</a> provides income estimates for neighbourhoods (Middle layer Super Output Areas) and compares these with house sale prices.</p>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+                <div id="data-on-housing-affordability" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">8.</span> Data on housing affordability</h2>
+                        </header>
+                        <p><div class="markdown-box-container
+
+
+">
+    <p><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/ratioofhousepricetoworkplacebasedearningslowerquartileandmedian">House price to workplace-based earnings ratio</a><br> Dataset | Released 24 March 2025<br> Affordability ratios calculated by dividing house prices by gross annual workplace-based earnings. Based on the median and lower quartiles of both house prices and earnings in England and Wales.</p><p><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/ratioofhousepricetoresidencebasedearningslowerquartileandmedian">House price to residence-based earnings ratio</a><br> Dataset | Released 24 March 2025<br> Affordability ratios calculated by dividing house prices by gross annual residence-based earnings. Based on the median and lower quartiles of both house prices and earnings in England and Wales.</p><p><a href="http://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/ratioofhousepricetoworkplacebasedearningsforformerlocalauthorities">Ratio of house price to workplace-based earnings for former local authorities</a><br> Dataset | Released 24 March 2025<br> Affordability ratios calculated by dividing house prices by gross annual workplace-based earnings for former local authorities in England and Wales.</p><p><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/medianhousepricesforadministrativegeographies">Median house prices for administrative geographies</a><br> Dataset | Released 24 March 2025<br> Median price paid for residential property in England and Wales, by property type and administrative geographies. Annual data. (Formerly HPSSA Dataset 9)</p><p><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/residentialpropertysalesforadministrativegeographies">Residential property sales for administrative geographies</a><br> Dataset | Released on 24 March 2025<br> Number of residential property sales in England and Wales, by property type and administrative geographies. Quarterly rolling annual data. Formerly HPSSA dataset six. </p>
+</div>
+</p>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+                <div id="glossary" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">9.</span> Glossary</h2>
+                        </header>
+                        <h3>Housing affordability ratio</h3><p>Housing affordability estimates are calculated by dividing house prices by annual earnings to create a ratio. It can be used to compare affordability over time and between areas. A larger number reflects a less affordable area.</p><p>By using a ratio, it allows us to compare over time without the need to adjust for inflation.</p><h3>Local authorities</h3><p>These are the 318 local authorities (LAs) that existed at the time of data collection (centred on 1 April 2023). Our additional dataset provides recent estimates for workplace-based earnings in LAs that existed between 2014 and 2022.</p><h3>Residence-based earnings</h3><p>Residence-based earnings refer to the earnings of the people who live in the area, though they may work elsewhere. We use a snapshot of the annual earnings of all full-time employees, or an annualised version of the weekly estimate where annual is not available.</p><h3>Workplace-based earnings</h3><p>Workplace-based earnings refer to the earnings of the people who work in the area, though they may live elsewhere. We use a snapshot of the annual earnings of all full-time employees, or an annualised version of the weekly estimate where annual is not available. The analysis in this statistical bulletin uses earnings data based on the place of work rather than the place of residence, unless otherwise stated.</p><h3>Statistically significant</h3><p>When looking at changes over time in an area, or differences between areas in terms of affordability, we can account for the degree of uncertainty around estimates. We look at statistical differences by having a range around the estimates which the true affordability ratio is likely to lie within, and seeing whether these values overlap between the two ratios we are comparing.</p>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+                <div id="data-sources-and-quality" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">10.</span> Data sources and quality</h2>
+                        </header>
+                        <h3>Data sources</h3><p>Full details of data sources and other available measures are in our <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/methodologies/housingaffordabilityinenglandandwalesqmi">Housing affordability in England and Wales Quality and Methodology Information (QMI)</a>.</p><p>House prices for small areas (formerly House Price Statistics for Small Areas) are published as part of this release. They are calculated using open data from HM Land Registry (HMLR). This is a source of comprehensive record-level administrative data on residential properties that have been sold up to the period October 2023 to September 2024. This release is based on HPSSAs to the year ending September 2024, as published by HMLR on 29 January 2025.</p><p>Median and lower quartile gross annual earnings for full-time workers are taken from our <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/previousReleases">Employee earnings in the UK bulletins</a>, which use data from our <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/methodologies/annualsurveyofhoursandearningslowpayandannualsurveyofhoursandearningspensionresultsqmi">Annual Survey of Hours and Earnings (ASHE) QMI</a>. This release uses ASHE data snapshot in April 2024, as published in October 2024. The main implications of using ASHE are that:</p>
+<ul>
+  <li>it is a sample survey, so estimates are less precise than if all employees were included</li>
+  <li>gross full-time annual earnings are not always available, in which case they are supplemented by annualised weekly earnings</li>
+  <li>it includes payments to workers who were on the Coronavirus Job Retention Scheme (CJRS), also known as furlough, during 2020 or 2021, and had lower response rates around that time</li>
+  <li>new occupation coding was applied in 2021, and methodological improvements were applied in 2023 and 2024 that increase the number of high earners included in the estimates</li>
+</ul><h3>Revisions</h3><p>These affordability-ratio statistics are revised annually to reflect revisions to the HPSSA and ASHE data. House prices are subject to revision throughout the entire time series because there can be a delay in the registration of property transactions. ASHE data are only revised once, the year after provisional release.</p><h3>Strengths and limitations </h3><h4>Consistency and timeliness</h4><p>The main strength of this series is that it has been measured in a consistent way over time.</p><h4>Available for local areas</h4><p>While a range of house price measures are available, this source is the main one available at below local authority level. Each release presents the whole series on the latest available geographies, as well as a five-year average ratio for using in local housing policy setting.</p><h4>Range of measures</h4><p>This release provides a range of measures, such as earnings on a residence basis and workplace basis.</p><h4>Individual earnings</h4><p>The Annual Survey of Hours and Earnings (ASHE) data we use in our <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2024">Employee earnings in the UK bulletins</a> are based on individual earnings, and therefore exclude the self-employed. However, house purchases are often done on a household basis. Our <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingpurchaseaffordabilitygreatbritain/previousReleases">Housing Purchase Affordability bulletins</a> look at affordability on a household basis. In Quarter 1 (Jan to Mar) 2024, 60% of mortgages were based on joint income, according to the Financial Conduct Authority's <a href="https://www.fca.org.uk/data/mortgage-lending-statistics">Mortgage lending statistics - March 2025</a>.</p><h4>House prices are not mix adjusted</h4><p>House prices are for residential properties sold each year, not the stock of existing housing. As they are not mix adjusted, these prices will represent a varying mix of property types sold over time and this will differ from the mix in the underlying stock. There were sharp price increases in 2021, as shown in our <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/medianhousepricesforadministrativegeographies">Median house prices for administrative geographies dataset</a>. This corresponds with increases in the volume of sales and changes in Stamp Duty Land Tax.</p><h4>No estimation of equity, deposits, and upfront costs</h4><p>The sources used in this release cannot account for household circumstances when buying a home, such as paying deposits, having existing equity, or paying upfront costs like stamp duty. It does not account for "ongoing affordability" (the costs of staying in owner-occupation, such as mortgage payments).</p>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+                <div id="related-links" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">11.</span> Related links</h2>
+                        </header>
+                        <p><div class="markdown-box-container
+
+
+">
+    <p><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingpurchaseaffordabilitygreatbritain/2023">Housing Purchase Affordability, UK: 2023</a><br> Bulletin | Released 9 December 2024<br> Ratios of house prices to annual disposable household incomes, by decile, for countries of the UK and regions of England. Part of our additional measures of housing affordability series.</p><p><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/privaterentalaffordabilityengland/2023">Private rental affordability, England and Wales: 2023</a><br> Bulletin | Released 28 October 2024<br> Private rent prices by country and English region, expressed as a percentage of gross monthly income of private renting households. Part of our additional measures of housing affordability series.</p><p><a href="https://www.ons.gov.uk/economy/inflationandpriceindices/articles/housingpricesinyourarea/2024-03-20">Housing prices in your area</a><br> Interactive tool | Released 20 March 2024<br> Find the latest data on average house prices and rents in your local authority area, and how they have changed compared with regional and national trends.</p><p><a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2024">Employee earnings in the UK: 2024</a><br> Bulletin | Released 29 October 2024<br> Measures of employee earnings, using data from the Annual Survey for Hours and Earnings (ASHE).</p><p><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/whoismostexposedtorisinghousingcostsinenglandandwales/2024-04-25">Who is most exposed to rising housing costs in England and Wales</a><br> Article | Released 25 April 2024<br> See which areas were most and least affected by rising mortgage and rent costs in 2023.</p><p><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/articles/firsttimebuyermortgagesalesfellacrosslondonindecadeto2023/2025-03-06">First-time buyer mortgage sales fell across London in decade to 2023</a><br> Article | Released 18 March 2025<br> First-time mortgage buyers bought homes further from the capital compared to 10 years earlier, ONS analysis of Financial Conduct Authority data show. </p>
+</div>
+</p>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+                <div id="cite-this-bulletin" class="section__content--markdown">
+                    <section>
+                        <header>
+                            <h2><span class="section__content-number">12.</span> Cite this bulletin</h2>
+                        </header>
+                        <p><div class="markdown-box-container
+
+
+">
+    <p>Office for National Statistics (ONS), released 24 March 2025, ONS website, statistical bulletin, <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024">Housing affordability in England and Wales: 2024</a> </p>
+</div>
+</p>
+                        <a class="print--hide js-scroll" href="#toc">Back to table of contents</a>
+                    </section>
+                </div>
+            
+            <!-- Accordion -->
+            
+             <!-- Margin at bottom of article if no Accordion present -->
+                <div class="margin-bottom--4">
+                </div>
+            
+        </article>
+        
+        <div class="col col--md-11 col--lg-20 margin-top-md--3">
+            
+    
+    
+
+
+
+	<div class=" margin-bottom-sm--2 margin-bottom-md--2 print--hide">
+		<a class="btn btn--primary btn--full-width" href="/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/relateddata" data-gtm-title="" data-gtm-type="related-data">
+			
+			
+
+			
+			
+				View all data used in this <span class="lowercase">
+Statistical bulletin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span>
+			
+
+			
+			
+		</a>
+	</div>
+
+    
+    
+
+
+<div class="tiles__item tiles__item--nav-type flush-col">
+	<h3 class="tiles__title-h3 tiles__title-h3--nav">
+		Contact details for this <span class="lowercase">
+Statistical bulletin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span>
+	</h3>
+	<div class="tiles__content--nav">
+		<address>
+			Housing Analysis team<br/>
+			<a href="mailto:better.info@ons.gov.uk">better.info@ons.gov.uk</a><br/>
+			
+		</address>
+	</div>
+</div>
+    
+    
+
+    
+    
+    
+    
+
+        </div>
+    </div> 
+
+</div>
+
+</main>
+
+
+	<footer class="print--hide">
+	<h2 class="visuallyhidden">Footer links</h2>
+	<div class="footer">
+		<div class="wrapper">
+			<nav aria-label="Footer links">
+                <div class="footer-nav col-wrap">
+                    
+                    <div class="col col--lg-one-third col--md-one-third">
+                        <h3 class="footer-nav__heading">Help</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="/help/accessibility">Accessibility</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/cookies">Cookies</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/help/privacynotice">Privacy</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/help/termsandconditions">Terms and conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col--lg-one-third col--md-one-third">
+                        <h3 class="footer-nav__heading">About ONS</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="/aboutus/whatwedo">What we do</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="https://careers.ons.gov.uk">Careers</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/aboutus/contactus">Contact us</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/news">News</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of Information</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col col--lg-one-third col--md-one-third">
+                        <h3 class="footer-nav__heading">Connect with us</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="https://twitter.com/ONS" target="_blank">X</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="https://www.instagram.com/officefornationalstatistics" target="_blank">Instagram</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="https://www.facebook.com/ONS" target="_blank">Facebook</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="https://www.linkedin.com/company/office-for-national-statistics" target="_blank">LinkedIn</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="https://consultations.ons.gov.uk/" target="_blank">Consultations</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="https://www.statsusernetwork.ons.gov.uk/" target="_blank">Discussion forums</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new" target="_blank">Email alerts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+			</nav>
+		</div>
+		<div class="wrapper">
+			<div class="footer-license">
+				<img class="footer-license__img" alt="OGL" width="60" src="https://cdn.ons.gov.uk/assets/images/logo-ogl-footer.svg">
+				<p class="footer-license__text margin-left-sm--0">
+					All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>, except where otherwise stated
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="//cdn.ons.gov.uk/sixteens/418c927/js/main.js"></script>
+        <script src="/js/app.js"></script>
+
+        
+        
+            <script src="/js/third-party/highcharts-annotations-5.0.7.js"></script>
+            <script src="/js/third-party/highcharts-broken-axis-5.0.7.js"></script>
+            <script src="/js/third-party/highcharts-heatmap-5.0.7.js"></script>
+            <script src="/js/third-party/highcharts-exporting-5.0.7.js"></script>
+        
+
+	<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cd5ffa5fe9f86bf',t:'MTc3MTAwMzI0OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

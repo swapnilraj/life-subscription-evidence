@@ -1,0 +1,165 @@
+{
+  "model": "student_loans",
+  "version": "1.0",
+  "plans": [
+    {
+      "name": "Plan 1",
+      "threshold": 26065.0,
+      "rate": 0.09,
+      "interest_rate": 0.043,
+      "write_off_years": 25,
+      "avg_debt": 32000,
+      "provenance": {
+        "kind": "derived",
+        "source_ids": [
+          "gov_repay_your_student_loan",
+          "gov_icr_repayment_plans_interest_rates"
+        ],
+        "method": "Policy extraction from cached source artifact using rules: threshold='Plan 1 student loan.*?\u00a3([0-9,]+) a year', repayment_rate='pay\\s*([0-9]+)%\\s*of\\s*your\\s*income\\s*over\\s*the\\s*lowest\\s*threshold', write_off='Plan 1 loans get written off.*?on or after 1 September 2006.*?written off\\s*([0-9]+)\\s*years', interest_rate='Plan 1 interest-rate table: latest period '1 Sep 2024 to 31 Aug 2025', extracted rate column'."
+      }
+    },
+    {
+      "name": "Plan 2",
+      "threshold": 28470.0,
+      "rate": 0.09,
+      "interest_rate": 0.073,
+      "write_off_years": 30,
+      "avg_debt": 50000,
+      "provenance": {
+        "kind": "derived",
+        "source_ids": [
+          "gov_repay_your_student_loan",
+          "gov_icr_repayment_plans_interest_rates"
+        ],
+        "method": "Policy extraction from cached source artifact using rules: threshold='Plan 2 student loan.*?\u00a3([0-9,]+) a year', repayment_rate='pay\\s*([0-9]+)%\\s*of\\s*your\\s*income\\s*over\\s*the\\s*lowest\\s*threshold', write_off='Plan 2 loans are written off\\s*([0-9]+)\\s*years', interest_rate='Plan 2 max-interest table: latest period '1 Sep 2024 to 31 Aug 2025', extracted rate column'."
+      }
+    },
+    {
+      "name": "Plan 5",
+      "threshold": 25000.0,
+      "rate": 0.09,
+      "interest_rate": 0.073,
+      "write_off_years": 40,
+      "avg_debt": 50000,
+      "provenance": {
+        "kind": "derived",
+        "source_ids": [
+          "gov_repay_your_student_loan",
+          "gov_icr_repayment_plans_interest_rates"
+        ],
+        "method": "Policy extraction from cached source artifact using rules: threshold='Plan 5 student loan.*?\u00a3([0-9,]+) a year', repayment_rate='pay\\s*([0-9]+)%\\s*of\\s*your\\s*income\\s*over\\s*the\\s*lowest\\s*threshold', write_off='Plan 5 loans are written off\\s*([0-9]+)\\s*years', interest_rate='Plan 5 proxy set equal to extracted Plan 2 latest max rate rule (Plan 2 max-interest table: latest period '1 Sep 2024 to 31 Aug 2025', extracted rate column)'."
+      }
+    }
+  ],
+  "salary_bands": {
+    "values": [
+      25000,
+      30000,
+      40000,
+      50000,
+      75000,
+      100000
+    ],
+    "provenance": {
+      "kind": "assumption",
+      "source_ids": [
+        "gov_student_loans_england_2024_25"
+      ],
+      "assumption_class": "scenario_model",
+      "assumption_basis": "Representative salary bands for scenario analysis informed by borrower distribution context in official release."
+    }
+  },
+  "scenario_parameters": {
+    "default_salary_growth": {
+      "value": 0.02,
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "ons_household_disposable_income"
+        ],
+        "assumption_class": "common_parlance",
+        "assumption_basis": "Scenario assumption for nominal annual salary progression anchored to ONS income trend context."
+      }
+    },
+    "graduate_tax": {
+      "threshold": 25000.0,
+      "rate": 0.09,
+      "working_years": 40,
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "gov_repay_your_student_loan",
+          "gov_icr_repayment_plans_interest_rates"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Counterfactual benchmark definition; threshold is auto-set from extracted Plan 5 repayment threshold and rate auto-set from extracted statutory repayment rate; working years remains a scenario assumption."
+      }
+    }
+  },
+  "generated": {
+    "generator": "code/build_provenance_inputs.py",
+    "generated_utc": "2026-02-13T17:51:29.711819+00:00",
+    "artifact_lock_sha256": "7c23e0af04caf61f7e2fd707859ec0652ab92a7fd30501fc7c8d45dbd8aa28ed",
+    "extracted_metrics_sha256": "59292fc8a1d8ebb474f67a966fa7d61c9003aac572e684bda1bcef913ccd76ae"
+  },
+  "provenance_blocks": [
+    {
+      "name": "policy_parameters_extracted",
+      "fields": [
+        "plans[].threshold",
+        "plans[].rate",
+        "plans[].write_off_years"
+      ],
+      "provenance": {
+        "kind": "derived",
+        "source_ids": [
+          "gov_repay_your_student_loan"
+        ],
+        "method": "Programmatically extracted from GOV.UK repayment-policy page during provenance build."
+      }
+    },
+    {
+      "name": "plan_interest_rate_inputs",
+      "fields": [
+        "plans[0].interest_rate",
+        "plans[1].interest_rate"
+      ],
+      "provenance": {
+        "kind": "derived",
+        "source_ids": [
+          "gov_icr_repayment_plans_interest_rates"
+        ],
+        "method": "Programmatically extracted latest Plan 1 and Plan 2 interest-rate rows from GOV.UK policy-statistics page."
+      }
+    },
+    {
+      "name": "plan5_interest_rate_proxy_assumption",
+      "fields": [
+        "plans[2].interest_rate"
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "gov_icr_repayment_plans_interest_rates"
+        ],
+        "assumption_class": "proxy",
+        "assumption_basis": "Plan 5 borrower repayment cohort begins in 2026; model proxies Plan 5 effective interest rate to the latest published Plan 2 maximum rate pending direct observed series."
+      }
+    },
+    {
+      "name": "plan_finance_assumptions",
+      "fields": [
+        "plans[].avg_debt"
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "gov_student_loans_england_2024_25",
+          "slc_annual_report_2024_25"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Plan-level debt simplifications used for deterministic simulation; benchmarked against official SLC/GOV.UK publications."
+      }
+    }
+  ]
+}

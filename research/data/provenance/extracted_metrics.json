@@ -1,0 +1,126 @@
+{
+  "version": "1.0",
+  "generated_utc": "2026-02-13T17:51:29.827887+00:00",
+  "metrics": {
+    "plan_1_threshold": {
+      "value": 26065.0,
+      "source_id": "gov_repay_your_student_loan",
+      "rule": "Plan 1 student loan.*?\u00a3([0-9,]+) a year"
+    },
+    "plan_2_threshold": {
+      "value": 28470.0,
+      "source_id": "gov_repay_your_student_loan",
+      "rule": "Plan 2 student loan.*?\u00a3([0-9,]+) a year"
+    },
+    "plan_5_threshold": {
+      "value": 25000.0,
+      "source_id": "gov_repay_your_student_loan",
+      "rule": "Plan 5 student loan.*?\u00a3([0-9,]+) a year"
+    },
+    "plan_repayment_rate_pct": {
+      "value": 9,
+      "source_id": "gov_repay_your_student_loan",
+      "rule": "pay\\s*([0-9]+)%\\s*of\\s*your\\s*income\\s*over\\s*the\\s*lowest\\s*threshold"
+    },
+    "plan_1_write_off_years": {
+      "value": 25,
+      "source_id": "gov_repay_your_student_loan",
+      "rule": "Plan 1 loans get written off.*?on or after 1 September 2006.*?written off\\s*([0-9]+)\\s*years"
+    },
+    "plan_2_write_off_years": {
+      "value": 30,
+      "source_id": "gov_repay_your_student_loan",
+      "rule": "Plan 2 loans are written off\\s*([0-9]+)\\s*years"
+    },
+    "plan_5_write_off_years": {
+      "value": 40,
+      "source_id": "gov_repay_your_student_loan",
+      "rule": "Plan 5 loans are written off\\s*([0-9]+)\\s*years"
+    },
+    "plan_1_interest_rate_pct": {
+      "value": 4.3,
+      "source_id": "gov_icr_repayment_plans_interest_rates",
+      "rule": "Plan 1 interest-rate table: latest period '1 Sep 2024 to 31 Aug 2025', extracted rate column"
+    },
+    "plan_2_max_interest_rate_pct": {
+      "value": 7.3,
+      "source_id": "gov_icr_repayment_plans_interest_rates",
+      "rule": "Plan 2 max-interest table: latest period '1 Sep 2024 to 31 Aug 2025', extracted rate column"
+    },
+    "weekly_expenditure_2024": {
+      "value": 623.3,
+      "source_id": "ons_family_spending_fig1_csv",
+      "rule": "CSV row='FYE 2024', column='Real-terms mean weekly expenditure'"
+    },
+    "housing_weekly_2024": {
+      "value": 113.3,
+      "source_id": "ons_family_spending_fye_2024",
+      "rule": "housing \\(net\\), fuel and power at 18%\\s*\\(\u00a3?([0-9]+\\.[0-9]+)\\)"
+    },
+    "transport_weekly_2024": {
+      "value": 88.2,
+      "source_id": "ons_family_spending_fye_2024",
+      "rule": "Transport was the second biggest proportional expense at 14%\\s*\\(\u00a3?([0-9]+\\.[0-9]+)\\)"
+    },
+    "median_home_price_england_2024": {
+      "value": 290000.0,
+      "source_id": "ons_housing_affordability_table1_csv",
+      "rule": "CSV row=England, column='Median House price (12 months to Sep 2024)'"
+    },
+    "median_earnings_england_2024": {
+      "value": 37600.0,
+      "source_id": "ons_housing_affordability_table1_csv",
+      "rule": "CSV row=England, column='Median Earnings'"
+    },
+    "affordability_ratio_england_2024": {
+      "value": 7.7,
+      "source_id": "ons_housing_affordability_table1_csv",
+      "rule": "CSV row=England, column='2024 Affordability Ratio'"
+    },
+    "average_private_rent_gb_march_2024": {
+      "value": 1246.0,
+      "source_id": "ons_private_rent_fig2_csv",
+      "rule": "CSV row='Mar 2024', column='Great Britain'"
+    },
+    "average_private_rent_england_march_2024": {
+      "value": 1285.0,
+      "source_id": "ons_private_rent_fig2_csv",
+      "rule": "CSV row='Mar 2024', column='England'"
+    },
+    "rent_inflation_england_march_2024_pct": {
+      "value": 9.1,
+      "source_id": "ons_private_rent_fig2_csv",
+      "rule": "Derived from CSV rows 'Mar 2023' and 'Mar 2024', column='England'"
+    },
+    "house_price_growth_uk_hpi_5y_avg_pct": {
+      "value": 4.322,
+      "source_id": "ons_private_rent_fig1_csv",
+      "rule": "CSV column='UK HPI' trailing mean over last 60 non-null monthly observations (Mar 2019 to Feb 2024)"
+    },
+    "average_council_tax_band_d_england_2024_25_annual": {
+      "value": 2171.0,
+      "source_id": "gov_council_tax_band_d_england_2024_25_table2",
+      "rule": "ODS Table_2 row='England', column='Average council tax including parish precepts (Band D)'"
+    },
+    "lease_extension_cost_jump_threshold_years": {
+      "value": 80,
+      "source_id": "gov_leasehold_extending_or_ending_lease",
+      "rule": "When there are\\s*([0-9]+)\\s*years or less remaining on your lease, the cost of extending it increases significantly"
+    },
+    "median_household_disposable_income_uk_fye2023": {
+      "value": 34500.0,
+      "source_id": "ons_household_disposable_income",
+      "rule": "median household disposable income in the UK was \u00a3([0-9,]+), a decrease"
+    },
+    "mortgage_rate_2y_75ltv_pct": {
+      "value": 3.91,
+      "source_id": "boe_quoted_rates",
+      "rule": "BoE fromshowcolumns table series=IUMBV34, date=31 Jan 26"
+    },
+    "savings_return_1y_fixed_bond_pct": {
+      "value": 3.64,
+      "source_id": "boe_quoted_rates",
+      "rule": "BoE fromshowcolumns table series=IUMWTFA, date=31 Jan 26"
+    }
+  }
+}

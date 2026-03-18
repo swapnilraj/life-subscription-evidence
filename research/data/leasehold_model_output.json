@@ -1,0 +1,114 @@
+{
+  "property_value": 290000.0,
+  "lease_length": 99,
+  "scenarios": [
+    {
+      "name": "Flat \u00a3250",
+      "ground_rent_total": 6000,
+      "service_charges_total": 5342289.607039112,
+      "lease_extension_cost": 8605.210318824635,
+      "total_cost": 5356894.817357936,
+      "extraction_amount": 4725360.201686007,
+      "extraction_percentage": 512.7707761949399
+    },
+    {
+      "name": "RPI-linked \u00a3250",
+      "ground_rent_total": 8606.617553836692,
+      "service_charges_total": 5342289.607039112,
+      "lease_extension_cost": 13347.786298165445,
+      "total_cost": 5364244.010891113,
+      "extraction_amount": 4732709.395219184,
+      "extraction_percentage": 513.5682713088721
+    },
+    {
+      "name": "Doubling 10yr \u00a3250",
+      "ground_rent_total": 11500.0,
+      "service_charges_total": 5342289.607039112,
+      "lease_extension_cost": 23218.93778466485,
+      "total_cost": 5377008.544823777,
+      "extraction_amount": 4745473.929151848,
+      "extraction_percentage": 514.9534101539666
+    },
+    {
+      "name": "Doubling 25yr \u00a3250",
+      "ground_rent_total": 6000.0,
+      "service_charges_total": 5342289.607039112,
+      "lease_extension_cost": 8605.210318824635,
+      "total_cost": 5356894.817357936,
+      "extraction_amount": 4725360.201686007,
+      "extraction_percentage": 512.7707761949399
+    }
+  ],
+  "extension_curve": [
+    {
+      "years_remaining": 99,
+      "premium": 6117.860029687401,
+      "marriage_value": false
+    },
+    {
+      "years_remaining": 94,
+      "premium": 6426.704145345733,
+      "marriage_value": false
+    },
+    {
+      "years_remaining": 89,
+      "premium": 6820.8761958470795,
+      "marriage_value": false
+    },
+    {
+      "years_remaining": 85,
+      "premium": 7213.28639652835,
+      "marriage_value": false
+    },
+    {
+      "years_remaining": 84,
+      "premium": 7323.950716354766,
+      "marriage_value": false
+    },
+    {
+      "years_remaining": 80,
+      "premium": 7824.776620421198,
+      "marriage_value": false
+    },
+    {
+      "years_remaining": 75,
+      "premium": 8605.210318824635,
+      "marriage_value": true
+    },
+    {
+      "years_remaining": 70,
+      "premium": 9601.26345885063,
+      "marriage_value": true
+    },
+    {
+      "years_remaining": 65,
+      "premium": 10872.507716736038,
+      "marriage_value": true
+    },
+    {
+      "years_remaining": 60,
+      "premium": 12494.973324509181,
+      "marriage_value": true
+    },
+    {
+      "years_remaining": 55,
+      "premium": 14565.696265500399,
+      "marriage_value": true
+    },
+    {
+      "years_remaining": 50,
+      "premium": 17208.521776133268,
+      "marriage_value": true
+    },
+    {
+      "years_remaining": 45,
+      "premium": 20581.511248258645,
+      "marriage_value": true
+    },
+    {
+      "years_remaining": 40,
+      "premium": 24886.395522038867,
+      "marriage_value": true
+    }
+  ]
+}

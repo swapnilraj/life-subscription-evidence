@@ -1,0 +1,136 @@
+{
+  "version": "1.0",
+  "claims": [
+    {
+      "id": "historical_weekly_expenditure_2024",
+      "description": "2024 average weekly household expenditure used in historical model",
+      "model_input_file": "historical_inputs.json",
+      "value_path": "$.snapshots[4].avg_weekly_expenditure",
+      "provenance_path": "$.snapshots[4]",
+      "published_locations": [
+        "research/data/historical_analysis.json",
+        "research/data/historical-comparison.md"
+      ]
+    },
+    {
+      "id": "historical_housing_weekly_2024",
+      "description": "2024 weekly housing/net fuel/power category amount",
+      "model_input_file": "historical_inputs.json",
+      "value_path": "$.snapshots[4].categories[0].weekly_amount",
+      "provenance_path": "$.snapshots[4].categories[0]",
+      "published_locations": [
+        "research/data/historical_analysis.json",
+        "research/data/historical-comparison.md"
+      ]
+    },
+    {
+      "id": "leasehold_property_value_baseline",
+      "description": "Property value baseline used in leasehold model",
+      "model_input_file": "leasehold_inputs.json",
+      "value_path": "$.property_value.value",
+      "provenance_path": "$.property_value",
+      "published_locations": [
+        "research/data/leasehold_model_output.json",
+        "research/data/leasehold.md"
+      ]
+    },
+    {
+      "id": "leasehold_service_charge_baseline",
+      "description": "Initial annual service-charge baseline (assumption)",
+      "model_input_file": "leasehold_inputs.json",
+      "value_path": "$.initial_service_charge.value",
+      "provenance_path": "$.initial_service_charge",
+      "published_locations": [
+        "research/data/leasehold_model_output.json",
+        "research/data/leasehold.md"
+      ]
+    },
+    {
+      "id": "rent_vs_own_property_price_2024",
+      "description": "Property-price baseline for rent-vs-own simulation",
+      "model_input_file": "rent_vs_own_inputs.json",
+      "value_path": "$.parameters.property_price_2024",
+      "provenance_path": "$.provenance_blocks[0]",
+      "published_locations": [
+        "research/data/rent_vs_own_summary.json",
+        "research/data/rent-wealth-gap.md"
+      ]
+    },
+    {
+      "id": "rent_vs_own_monthly_rent_2024",
+      "description": "Monthly rent baseline for rent-vs-own simulation",
+      "model_input_file": "rent_vs_own_inputs.json",
+      "value_path": "$.parameters.monthly_rent_2024",
+      "provenance_path": "$.provenance_blocks[0]",
+      "published_locations": [
+        "research/data/rent_vs_own_summary.json",
+        "research/data/rent-wealth-gap.md"
+      ]
+    },
+    {
+      "id": "rent_vs_own_rent_inflation",
+      "description": "Annual rent inflation baseline for rent-vs-own simulation",
+      "model_input_file": "rent_vs_own_inputs.json",
+      "value_path": "$.parameters.rent_inflation",
+      "provenance_path": "$.provenance_blocks[0]",
+      "published_locations": [
+        "research/data/rent_vs_own_summary.json",
+        "research/data/rent-wealth-gap.md"
+      ]
+    },
+    {
+      "id": "student_plan2_threshold",
+      "description": "Plan 2 repayment threshold used in student-loan model",
+      "model_input_file": "student_loans_inputs.json",
+      "value_path": "$.plans[1].threshold",
+      "provenance_path": "$.plans[1]",
+      "published_locations": [
+        "research/data/repayment-analysis.csv",
+        "research/data/student-loans.md"
+      ]
+    },
+    {
+      "id": "student_plan5_threshold",
+      "description": "Plan 5 repayment threshold used in student-loan model",
+      "model_input_file": "student_loans_inputs.json",
+      "value_path": "$.plans[2].threshold",
+      "provenance_path": "$.plans[2]",
+      "published_locations": [
+        "research/data/repayment-analysis.csv",
+        "research/data/student-loans.md"
+      ]
+    },
+    {
+      "id": "student_salary_growth_assumption",
+      "description": "Nominal salary-growth assumption used in student-loan simulation",
+      "model_input_file": "student_loans_inputs.json",
+      "value_path": "$.scenario_parameters.default_salary_growth.value",
+      "provenance_path": "$.scenario_parameters.default_salary_growth",
+      "published_locations": [
+        "research/data/student-loans.md"
+      ]
+    },
+    {
+      "id": "subscriptions_income_2025",
+      "description": "2025 monthly income baseline used in subscriptions model",
+      "model_input_file": "subscriptions_inputs.json",
+      "value_path": "$.income_monthly.2025",
+      "provenance_path": "$.income_monthly",
+      "published_locations": [
+        "code/subscription_data.json",
+        "research/data/subscription-economy.md"
+      ]
+    },
+    {
+      "id": "subscriptions_count_2025",
+      "description": "Modeled subscription-count trajectory value for 2025",
+      "model_input_file": "subscriptions_inputs.json",
+      "value_path": "$.subscription_count_series.counts[2]",
+      "provenance_path": "$.subscription_count_series",
+      "published_locations": [
+        "code/subscription_chart.txt",
+        "research/data/subscription-economy.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "2005": {
+    "breakdown": {
+      "Mortgage": 800,
+      "Council Tax": 90,
+      "Energy (gas/electric)": 80,
+      "Water": 25,
+      "Landline/Dial-up Internet": 25,
+      "Mobile (pay-as-you-go)": 20,
+      "TV License": 12,
+      "DVD Rentals (Blockbuster)": 15,
+      "Car Loan": 150,
+      "Car Insurance": 50,
+      "Home Insurance": 15
+    },
+    "summary": {
+      "total_monthly": 1282,
+      "total_subscriptions": 0,
+      "total_owned_converted": 0,
+      "num_subscriptions": 0,
+      "year": 2005
+    },
+    "income_analysis": {
+      "total_pct": 65.74358974358975,
+      "subscriptions_pct": 0.0,
+      "owned_converted_pct": 0.0,
+      "income_monthly": 1950
+    }
+  },
+  "2015": {
+    "breakdown": {
+      "Rent/Mortgage": 900,
+      "Council Tax": 120,
+      "Energy": 110,
+      "Water": 30,
+      "Broadband": 25,
+      "Mobile Phones": 35,
+      "Netflix": 7.99,
+      "Spotify": 9.99,
+      "Car Finance": 200,
+      "Car Insurance": 65,
+      "Home Insurance": 18,
+      "Gym": 25
+    },
+    "summary": {
+      "total_monthly": 1545.98,
+      "total_subscriptions": 277.98,
+      "total_owned_converted": 217.98,
+      "num_subscriptions": 5,
+      "year": 2015
+    },
+    "income_analysis": {
+      "total_pct": 68.61873058144697,
+      "subscriptions_pct": 12.338215712383489,
+      "owned_converted_pct": 9.675099866844207,
+      "income_monthly": 2253
+    }
+  },
+  "2025": {
+    "breakdown": {
+      "Rent (private)": 1050,
+      "Council Tax": 147,
+      "Energy (gas/electric)": 180,
+      "Water": 35,
+      "Broadband": 30,
+      "Mobile Phones (2 contracts)": 40,
+      "Netflix": 10.99,
+      "Amazon Prime Video": 8.99,
+      "Disney+": 7.99,
+      "Spotify": 10.99,
+      "Microsoft 365": 8.33,
+      "iCloud Storage": 2.99,
+      "Gym Membership": 30,
+      "Food Delivery Plus (Deliveroo)": 15,
+      "Car Finance (PCP)": 300,
+      "Car Insurance": 80,
+      "Home Insurance": 20
+    },
+    "summary": {
+      "total_monthly": 1977.28,
+      "total_subscriptions": 435.28,
+      "total_owned_converted": 350.28,
+      "num_subscriptions": 10,
+      "year": 2025
+    },
+    "income_analysis": {
+      "total_pct": 68.77495652173913,
+      "subscriptions_pct": 15.140173913043478,
+      "owned_converted_pct": 12.183652173913043,
+      "income_monthly": 2875
+    }
+  },
+  "growth_analysis": {
+    "total_increase_monthly": 695.28,
+    "total_pct_increase": 54.234009360374415,
+    "income_pct_increase": 47.43589743589743,
+    "stack_vs_income_gap": 6.798111924476984,
+    "annual_increase": 8343.36,
+    "ten_year_difference": 83433.6
+  }
+}

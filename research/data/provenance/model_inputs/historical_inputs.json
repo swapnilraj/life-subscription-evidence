@@ -1,0 +1,627 @@
+{
+  "model": "historical",
+  "version": "1.0",
+  "metadata": {
+    "description": "Historical household spending snapshots used by historical.py",
+    "schema": "snapshot-array"
+  },
+  "snapshots": [
+    {
+      "year": 1975,
+      "avg_weekly_income": 96.39,
+      "avg_weekly_expenditure": 96.39,
+      "house_price_to_income_ratio": 3.61,
+      "homeownership_rate": 55.0,
+      "household_debt_to_gdp": 55.5,
+      "savings_rate": 10.0,
+      "real_wage_index": 50.0,
+      "categories": [
+        {
+          "name": "Housing (mortgage/rent)",
+          "spending_type": "essential_recurring",
+          "weekly_amount": 30.0,
+          "as_pct_of_income": 31.1,
+          "description": "Mortgage at 3.6x income ratio (affordable ownership era)",
+          "notes": ""
+        },
+        {
+          "name": "Food & Non-Alcoholic Beverages",
+          "spending_type": "owned",
+          "weekly_amount": 20.0,
+          "as_pct_of_income": 20.8,
+          "description": "Grocery purchases, own food outright",
+          "notes": ""
+        },
+        {
+          "name": "Transport (car ownership)",
+          "spending_type": "owned",
+          "weekly_amount": 10.0,
+          "as_pct_of_income": 10.4,
+          "description": "Car purchased outright or hire purchase (eventual ownership)",
+          "notes": ""
+        },
+        {
+          "name": "Utilities (gas, electric, water)",
+          "spending_type": "essential_recurring",
+          "weekly_amount": 8.0,
+          "as_pct_of_income": 8.3,
+          "description": "Essential services, unavoidable",
+          "notes": ""
+        },
+        {
+          "name": "Clothing & Footwear",
+          "spending_type": "owned",
+          "weekly_amount": 6.0,
+          "as_pct_of_income": 6.2,
+          "description": "Purchase and own clothing",
+          "notes": ""
+        },
+        {
+          "name": "Recreation (CDs, books, cinema)",
+          "spending_type": "owned",
+          "weekly_amount": 5.0,
+          "as_pct_of_income": 5.2,
+          "description": "Buy media and entertainment, own permanently",
+          "notes": ""
+        },
+        {
+          "name": "Communication (landline)",
+          "spending_type": "subscribed",
+          "weekly_amount": 1.5,
+          "as_pct_of_income": 1.6,
+          "description": "Phone line rental, early subscription",
+          "notes": ""
+        },
+        {
+          "name": "Household goods (appliances)",
+          "spending_type": "owned",
+          "weekly_amount": 4.0,
+          "as_pct_of_income": 4.2,
+          "description": "Buy washing machine, TV, etc. Own for 10-20 years",
+          "notes": ""
+        },
+        {
+          "name": "Education",
+          "spending_type": "owned",
+          "weekly_amount": 0.5,
+          "as_pct_of_income": 0.5,
+          "description": "Free university tuition, minimal costs",
+          "notes": ""
+        },
+        {
+          "name": "Insurance & Financial Services",
+          "spending_type": "subscribed",
+          "weekly_amount": 3.0,
+          "as_pct_of_income": 3.1,
+          "description": "Home/car insurance, early recurring payments",
+          "notes": ""
+        },
+        {
+          "name": "Miscellaneous",
+          "spending_type": "hybrid",
+          "weekly_amount": 8.39,
+          "as_pct_of_income": 8.7,
+          "description": "Other goods and services",
+          "notes": ""
+        }
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "ons_family_spending_fig1_csv",
+          "ons_household_disposable_income",
+          "ons_housing_affordability_2024",
+          "boe_household_debt",
+          "gov_english_housing_survey"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Backcast scenario snapshot retained for longitudinal comparison; not directly extracted from current cached source artifacts."
+      }
+    },
+    {
+      "year": 1985,
+      "avg_weekly_income": 111.0,
+      "avg_weekly_expenditure": 111.0,
+      "house_price_to_income_ratio": 3.61,
+      "homeownership_rate": 63.0,
+      "household_debt_to_gdp": 55.5,
+      "savings_rate": 9.0,
+      "real_wage_index": 60.0,
+      "categories": [
+        {
+          "name": "Housing (mortgage/rent)",
+          "spending_type": "essential_recurring",
+          "weekly_amount": 35.0,
+          "as_pct_of_income": 31.5,
+          "description": "Mortgage at 3.6x income (1984 most affordable year)",
+          "notes": ""
+        },
+        {
+          "name": "Food & Non-Alcoholic Beverages",
+          "spending_type": "owned",
+          "weekly_amount": 22.0,
+          "as_pct_of_income": 19.8,
+          "description": "Grocery purchases",
+          "notes": ""
+        },
+        {
+          "name": "Transport (car ownership)",
+          "spending_type": "owned",
+          "weekly_amount": 12.0,
+          "as_pct_of_income": 10.8,
+          "description": "Mostly outright ownership, some hire purchase",
+          "notes": ""
+        },
+        {
+          "name": "Utilities (gas, electric, water)",
+          "spending_type": "essential_recurring",
+          "weekly_amount": 9.0,
+          "as_pct_of_income": 8.1,
+          "description": "Essential utilities",
+          "notes": ""
+        },
+        {
+          "name": "Clothing & Footwear",
+          "spending_type": "owned",
+          "weekly_amount": 7.0,
+          "as_pct_of_income": 6.3,
+          "description": "Purchase clothing",
+          "notes": ""
+        },
+        {
+          "name": "Recreation (CDs, VHS, cinema)",
+          "spending_type": "owned",
+          "weekly_amount": 6.0,
+          "as_pct_of_income": 5.4,
+          "description": "Media purchases, own permanently",
+          "notes": ""
+        },
+        {
+          "name": "Communication (landline)",
+          "spending_type": "subscribed",
+          "weekly_amount": 2.0,
+          "as_pct_of_income": 1.8,
+          "description": "Phone line rental",
+          "notes": ""
+        },
+        {
+          "name": "Household goods",
+          "spending_type": "owned",
+          "weekly_amount": 4.5,
+          "as_pct_of_income": 4.1,
+          "description": "Appliances and durables",
+          "notes": ""
+        },
+        {
+          "name": "Education",
+          "spending_type": "owned",
+          "weekly_amount": 0.5,
+          "as_pct_of_income": 0.5,
+          "description": "Still largely free tuition",
+          "notes": ""
+        },
+        {
+          "name": "Insurance & Financial",
+          "spending_type": "subscribed",
+          "weekly_amount": 3.5,
+          "as_pct_of_income": 3.2,
+          "description": "Insurance premiums",
+          "notes": ""
+        },
+        {
+          "name": "Miscellaneous",
+          "spending_type": "hybrid",
+          "weekly_amount": 9.5,
+          "as_pct_of_income": 8.6,
+          "description": "Other spending",
+          "notes": ""
+        }
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "ons_family_spending_fig1_csv",
+          "ons_household_disposable_income",
+          "ons_housing_affordability_2024",
+          "boe_household_debt",
+          "gov_english_housing_survey"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Backcast scenario snapshot retained for longitudinal comparison; not directly extracted from current cached source artifacts."
+      }
+    },
+    {
+      "year": 2005,
+      "avg_weekly_income": 450.0,
+      "avg_weekly_expenditure": 450.0,
+      "house_price_to_income_ratio": 5.5,
+      "homeownership_rate": 70.5,
+      "household_debt_to_gdp": 95.0,
+      "savings_rate": 6.5,
+      "real_wage_index": 90.0,
+      "categories": [
+        {
+          "name": "Housing (mortgage/rent)",
+          "spending_type": "essential_recurring",
+          "weekly_amount": 130.0,
+          "as_pct_of_income": 28.9,
+          "description": "House prices rising; ~5-6x income ratio",
+          "notes": ""
+        },
+        {
+          "name": "Food & Non-Alcoholic Beverages",
+          "spending_type": "owned",
+          "weekly_amount": 70.0,
+          "as_pct_of_income": 15.6,
+          "description": "Groceries",
+          "notes": ""
+        },
+        {
+          "name": "Transport (mix ownership/finance)",
+          "spending_type": "hybrid",
+          "weekly_amount": 60.0,
+          "as_pct_of_income": 13.3,
+          "description": "Mix of owned cars and car finance emerging",
+          "notes": ""
+        },
+        {
+          "name": "Utilities",
+          "spending_type": "essential_recurring",
+          "weekly_amount": 35.0,
+          "as_pct_of_income": 7.8,
+          "description": "Gas, electric, water",
+          "notes": ""
+        },
+        {
+          "name": "Communication (mobile + landline)",
+          "spending_type": "subscribed",
+          "weekly_amount": 12.0,
+          "as_pct_of_income": 2.7,
+          "description": "Mobile phones becoming universal",
+          "notes": ""
+        },
+        {
+          "name": "Recreation (DVDs + early digital)",
+          "spending_type": "hybrid",
+          "weekly_amount": 35.0,
+          "as_pct_of_income": 7.8,
+          "description": "Still buying DVDs, but iTunes emerging",
+          "notes": ""
+        },
+        {
+          "name": "Clothing",
+          "spending_type": "owned",
+          "weekly_amount": 30.0,
+          "as_pct_of_income": 6.7,
+          "description": "Fashion purchases",
+          "notes": ""
+        },
+        {
+          "name": "Household goods",
+          "spending_type": "owned",
+          "weekly_amount": 20.0,
+          "as_pct_of_income": 4.4,
+          "description": "Appliances, furniture",
+          "notes": ""
+        },
+        {
+          "name": "Education (student loans emerging)",
+          "spending_type": "subscribed",
+          "weekly_amount": 8.0,
+          "as_pct_of_income": 1.8,
+          "description": "Tuition fees introduced 1998, debt building",
+          "notes": ""
+        },
+        {
+          "name": "Insurance & Financial",
+          "spending_type": "subscribed",
+          "weekly_amount": 18.0,
+          "as_pct_of_income": 4.0,
+          "description": "Multiple insurance products",
+          "notes": ""
+        },
+        {
+          "name": "Miscellaneous",
+          "spending_type": "hybrid",
+          "weekly_amount": 32.0,
+          "as_pct_of_income": 7.1,
+          "description": "Other spending",
+          "notes": ""
+        }
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "ons_family_spending_fig1_csv",
+          "ons_household_disposable_income",
+          "ons_housing_affordability_2024",
+          "boe_household_debt",
+          "gov_english_housing_survey"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Backcast scenario snapshot retained for longitudinal comparison; not directly extracted from current cached source artifacts."
+      }
+    },
+    {
+      "year": 2015,
+      "avg_weekly_income": 520.0,
+      "avg_weekly_expenditure": 520.0,
+      "house_price_to_income_ratio": 7.2,
+      "homeownership_rate": 64.5,
+      "household_debt_to_gdp": 85.0,
+      "savings_rate": 9.3,
+      "real_wage_index": 92.0,
+      "categories": [
+        {
+          "name": "Housing (mortgage/rent)",
+          "spending_type": "essential_recurring",
+          "weekly_amount": 145.0,
+          "as_pct_of_income": 27.9,
+          "description": "High prices, declining ownership, rising renting",
+          "notes": ""
+        },
+        {
+          "name": "Food & Non-Alcoholic Beverages",
+          "spending_type": "owned",
+          "weekly_amount": 80.0,
+          "as_pct_of_income": 15.4,
+          "description": "Groceries",
+          "notes": ""
+        },
+        {
+          "name": "Transport (leasing growing)",
+          "spending_type": "hybrid",
+          "weekly_amount": 70.0,
+          "as_pct_of_income": 13.5,
+          "description": "PCP and leasing becoming common",
+          "notes": ""
+        },
+        {
+          "name": "Utilities",
+          "spending_type": "essential_recurring",
+          "weekly_amount": 40.0,
+          "as_pct_of_income": 7.7,
+          "description": "Rising energy costs",
+          "notes": ""
+        },
+        {
+          "name": "Communication (mobile + broadband)",
+          "spending_type": "subscribed",
+          "weekly_amount": 18.0,
+          "as_pct_of_income": 3.5,
+          "description": "Smartphones + broadband mandatory",
+          "notes": ""
+        },
+        {
+          "name": "Streaming & Digital Entertainment",
+          "spending_type": "subscribed",
+          "weekly_amount": 10.0,
+          "as_pct_of_income": 1.9,
+          "description": "Netflix, Spotify emerging",
+          "notes": ""
+        },
+        {
+          "name": "Recreation (other)",
+          "spending_type": "hybrid",
+          "weekly_amount": 25.0,
+          "as_pct_of_income": 4.8,
+          "description": "Experiences, some ownership",
+          "notes": ""
+        },
+        {
+          "name": "Clothing",
+          "spending_type": "owned",
+          "weekly_amount": 28.0,
+          "as_pct_of_income": 5.4,
+          "description": "Fashion",
+          "notes": ""
+        },
+        {
+          "name": "Household goods",
+          "spending_type": "owned",
+          "weekly_amount": 18.0,
+          "as_pct_of_income": 3.5,
+          "description": "Appliances",
+          "notes": ""
+        },
+        {
+          "name": "Education (student loans)",
+          "spending_type": "subscribed",
+          "weekly_amount": 15.0,
+          "as_pct_of_income": 2.9,
+          "description": "\u00a39,000 tuition fees, large debt stock",
+          "notes": ""
+        },
+        {
+          "name": "Software & Digital Services",
+          "spending_type": "subscribed",
+          "weekly_amount": 5.0,
+          "as_pct_of_income": 1.0,
+          "description": "Office 365, cloud storage, apps",
+          "notes": ""
+        },
+        {
+          "name": "Insurance & Financial",
+          "spending_type": "subscribed",
+          "weekly_amount": 22.0,
+          "as_pct_of_income": 4.2,
+          "description": "Insurance, pension contributions",
+          "notes": ""
+        },
+        {
+          "name": "Miscellaneous",
+          "spending_type": "hybrid",
+          "weekly_amount": 44.0,
+          "as_pct_of_income": 8.5,
+          "description": "Other spending",
+          "notes": ""
+        }
+      ],
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "ons_family_spending_fig1_csv",
+          "ons_household_disposable_income",
+          "ons_housing_affordability_2024",
+          "boe_household_debt",
+          "gov_english_housing_survey"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Backcast scenario snapshot retained for longitudinal comparison; not directly extracted from current cached source artifacts."
+      }
+    },
+    {
+      "year": 2024,
+      "avg_weekly_income": 663.46,
+      "avg_weekly_expenditure": 623.3,
+      "house_price_to_income_ratio": 7.7,
+      "homeownership_rate": 65.0,
+      "household_debt_to_gdp": 78.1,
+      "savings_rate": 9.5,
+      "real_wage_index": 93.0,
+      "categories": [
+        {
+          "name": "Housing (net), fuel and power",
+          "spending_type": "essential_recurring",
+          "weekly_amount": 113.3,
+          "as_pct_of_income": 17.1,
+          "description": "Rent/mortgage + utilities; homeownership 65%",
+          "notes": "",
+          "provenance": {
+            "kind": "derived",
+            "source_ids": [
+              "ons_family_spending_fye_2024"
+            ],
+            "method": "Regex extraction from cached source artifact using rule: housing \\(net\\), fuel and power at 18%\\s*\\(\u00a3?([0-9]+\\.[0-9]+)\\)"
+          }
+        },
+        {
+          "name": "Food & Non-Alcoholic Beverages",
+          "spending_type": "owned",
+          "weekly_amount": 85.0,
+          "as_pct_of_income": 12.8,
+          "description": "Groceries",
+          "notes": ""
+        },
+        {
+          "name": "Transport (heavily leased)",
+          "spending_type": "hybrid",
+          "weekly_amount": 88.2,
+          "as_pct_of_income": 13.3,
+          "description": "1.98M vehicles on lease; leasing now standard",
+          "notes": "",
+          "provenance": {
+            "kind": "derived",
+            "source_ids": [
+              "ons_family_spending_fye_2024"
+            ],
+            "method": "Regex extraction from cached source artifact using rule: Transport was the second biggest proportional expense at 14%\\s*\\(\u00a3?([0-9]+\\.[0-9]+)\\)"
+          }
+        },
+        {
+          "name": "Communication (mobile + broadband)",
+          "spending_type": "subscribed",
+          "weekly_amount": 20.0,
+          "as_pct_of_income": 3.0,
+          "description": "Smartphone + broadband essential",
+          "notes": ""
+        },
+        {
+          "name": "Streaming & Digital Entertainment",
+          "spending_type": "subscribed",
+          "weekly_amount": 25.0,
+          "as_pct_of_income": 3.8,
+          "description": "Netflix, Disney+, Spotify, YouTube Premium, etc.",
+          "notes": ""
+        },
+        {
+          "name": "Recreation & Culture (other)",
+          "spending_type": "hybrid",
+          "weekly_amount": 35.0,
+          "as_pct_of_income": 5.3,
+          "description": "Experiences, gym memberships, other",
+          "notes": ""
+        },
+        {
+          "name": "Clothing & Footwear",
+          "spending_type": "owned",
+          "weekly_amount": 30.0,
+          "as_pct_of_income": 4.5,
+          "description": "Fashion purchases",
+          "notes": ""
+        },
+        {
+          "name": "Household goods",
+          "spending_type": "owned",
+          "weekly_amount": 25.0,
+          "as_pct_of_income": 3.8,
+          "description": "Appliances, furniture",
+          "notes": ""
+        },
+        {
+          "name": "Education (student loans)",
+          "spending_type": "subscribed",
+          "weekly_amount": 20.0,
+          "as_pct_of_income": 3.0,
+          "description": "9% of income over threshold for graduates",
+          "notes": ""
+        },
+        {
+          "name": "Software & Digital Services",
+          "spending_type": "subscribed",
+          "weekly_amount": 12.0,
+          "as_pct_of_income": 1.8,
+          "description": "Office 365, Adobe CC, cloud storage, apps, gaming subs",
+          "notes": ""
+        },
+        {
+          "name": "Subscription Boxes & Services",
+          "spending_type": "subscribed",
+          "weekly_amount": 8.0,
+          "as_pct_of_income": 1.2,
+          "description": "Meal kits, beauty boxes, etc.",
+          "notes": ""
+        },
+        {
+          "name": "Insurance & Financial Services",
+          "spending_type": "subscribed",
+          "weekly_amount": 30.0,
+          "as_pct_of_income": 4.5,
+          "description": "Home, car, life, pet insurance; pension",
+          "notes": ""
+        },
+        {
+          "name": "Health & Personal Care",
+          "spending_type": "hybrid",
+          "weekly_amount": 25.0,
+          "as_pct_of_income": 3.8,
+          "description": "Prescriptions, personal care",
+          "notes": ""
+        },
+        {
+          "name": "Miscellaneous goods and services",
+          "spending_type": "hybrid",
+          "weekly_amount": 106.8,
+          "as_pct_of_income": 16.1,
+          "description": "Other spending (catch-all)",
+          "notes": ""
+        }
+      ],
+      "provenance": {
+        "kind": "derived",
+        "source_ids": [
+          "ons_family_spending_fig1_csv",
+          "ons_household_disposable_income",
+          "ons_housing_affordability_table1_csv"
+        ],
+        "method": "Computed from extracted metrics: weekly expenditure and category totals from rule 'CSV row='FYE 2024', column='Real-terms mean weekly expenditure'', median disposable income from rule 'median household disposable income in the UK was \u00a3([0-9,]+), a decrease', and affordability ratio from rule 'CSV row=England, column='2024 Affordability Ratio''."
+      }
+    }
+  ],
+  "generated": {
+    "generator": "code/build_provenance_inputs.py",
+    "generated_utc": "2026-02-13T17:51:29.711819+00:00",
+    "artifact_lock_sha256": "7c23e0af04caf61f7e2fd707859ec0652ab92a7fd30501fc7c8d45dbd8aa28ed",
+    "extracted_metrics_sha256": "59292fc8a1d8ebb474f67a966fa7d61c9003aac572e684bda1bcef913ccd76ae"
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "version": "1.0",
+  "updated_utc": "2026-02-13T17:51:29.696371+00:00",
+  "sources": [
+    {
+      "id": "boe_household_debt",
+      "title": "Bank of England household debt and credit statistics",
+      "publisher": "Bank of England",
+      "url": "https://www.bankofengland.co.uk/statistics",
+      "tier": "official_statistic",
+      "expected_sha256": "bbdf2d434dc2f01718886ac98221d0225d0bd065e600fbc0e77ac7c6f93052d7"
+    },
+    {
+      "id": "boe_mortgage_rates",
+      "title": "Bank of England statistics portal (interest rates and mortgage series)",
+      "publisher": "Bank of England",
+      "url": "https://www.bankofengland.co.uk/statistics",
+      "tier": "official_statistic",
+      "expected_sha256": "d5a5a140a24dab7551f733ef646c37d86c14a0003f5006160bea66f7ca930a54"
+    },
+    {
+      "id": "boe_quoted_rates",
+      "title": "Bank of England quoted mortgage rates data table (selected series)",
+      "publisher": "Bank of England",
+      "url": "https://www.bankofengland.co.uk/boeapps/database/fromshowcolumns.asp?Travel=NIxAZxSUx&FromSeries=1&ToSeries=50&DAT=RNG&FD=1&FM=Jan&FY=2012&TD=13&TM=Nov&TY=2027&FNY=Y&CSVF=TT&html.x=66&html.y=26&SeriesCodes=IUMZICQ,IUMBV34,IUMZICR,IUMB482,IUM2WTL,IUMBV37,IUMBV42,IUM5WTL,IUMBV45,IUMBV48,IUMB479,IUM2WDT,IUMBV24,IUMTLMV,IUMZID4,IUMBX67,IUMHPTL,IUMCCTL,IUMODTL,IUMB6VJ,IUMB6VK,IUMB6VL,IUMB6VM,IUMB6VN,IUMZID2,IUMWTFA,IUMB6RH,IUMB6RI&UsingCodes=Y&Filter=N&title=Quoted%20Rates&VPD=Y",
+      "tier": "official_statistic",
+      "required_for_extraction": true,
+      "expected_sha256": "4b93ba65b3b604bcbdc878af9f8c92737a18aa7a072d25986bf1a63a6c3cd9f3"
+    },
+    {
+      "id": "gov_council_tax_band_d_england_2024_25_table2",
+      "title": "Council tax levels set by local authorities in England 2024-25 (Table 2 ODS)",
+      "publisher": "UK Government",
+      "url": "https://assets.publishing.service.gov.uk/media/65fad50caa9b76001dfbdbac/Table_2_24-25.ods",
+      "tier": "official_statistic",
+      "artifact_format": "ods",
+      "required_for_extraction": true,
+      "expected_sha256": "c2a5e43199d1e5633b681ccec8ecd3ecff34e919284a48cfeffa8efe83441ec7"
+    },
+    {
+      "id": "gov_english_housing_survey",
+      "title": "English Housing Survey",
+      "publisher": "UK Government",
+      "url": "https://www.gov.uk/government/collections/english-housing-survey",
+      "tier": "official_statistic",
+      "expected_sha256": "3c7919eaca78c01b5e3ec9cafd9593e7c4ded8630b46a98fd8b3de9263f36c04"
+    },
+    {
+      "id": "gov_leasehold_statistics",
+      "title": "Leasehold dwellings in England",
+      "publisher": "UK Government",
+      "url": "https://www.gov.uk/government/statistics/leasehold-dwellings-2022-to-2023",
+      "tier": "official_statistic",
+      "expected_sha256": "7fbc8c83bf32bb9968081cee159b7d9ddd431c8f499883763a144ac158c24783"
+    },
+    {
+      "id": "gov_leasehold_extending_or_ending_lease",
+      "title": "Leasehold property: extending, changing or ending a lease",
+      "publisher": "UK Government",
+      "url": "https://www.gov.uk/leasehold-property/extending-changing-or-ending-a-lease",
+      "tier": "administrative_record",
+      "required_for_extraction": true,
+      "expected_sha256": "07a882f717a0df9ddfd8256331a6be717f226f066890c51dd3f2e35d424c4a32"
+    },
+    {
+      "id": "gov_icr_repayment_plans_interest_rates",
+      "title": "Income Contingent Student Loan repayment plans, interest rates and calculations (England)",
+      "publisher": "UK Government",
+      "url": "https://www.gov.uk/government/statistics/student-loans-in-england-2024-to-2025/income-contingent-student-loan-repayment-plans-interest-rates-and-calculations-england",
+      "tier": "official_statistic",
+      "required_for_extraction": true,
+      "expected_sha256": "340b78d8072429172fe8084df4d1bf2493343f67f1dcba79920fff748b4a04d5"
+    },
+    {
+      "id": "gov_repay_your_student_loan",
+      "title": "Repaying your student loan",
+      "publisher": "UK Government",
+      "url": "https://www.gov.uk/repaying-your-student-loan",
+      "tier": "administrative_record",
+      "required_for_extraction": true,
+      "expected_sha256": "98fedab6d9fa6f4107e296e5cf7a69b31d8f789bcc2b9ab7b11f0fa2ee813d98"
+    },
+    {
+      "id": "gov_student_loans_england_2024_25",
+      "title": "Student loans in England: financial year 2024-25",
+      "publisher": "UK Government",
+      "url": "https://www.gov.uk/government/statistics/student-loans-in-england-2024-to-2025",
+      "tier": "official_statistic",
+      "expected_sha256": "3e9b11b837423580402690b20b6f1f7d53c341d6b9b44439dd592dc111815435"
+    },
+    {
+      "id": "land_registry_price_paid",
+      "title": "Price Paid Data",
+      "publisher": "HM Land Registry",
+      "url": "https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads",
+      "tier": "administrative_record",
+      "expected_sha256": "cdfbb03514931b716c36291c3212fe72145f2b3a15823899a87246ef488a0ff7"
+    },
+    {
+      "id": "oecd_housing_database",
+      "title": "OECD Affordable Housing Database",
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/housing/data/affordable-housing-database/",
+      "tier": "official_statistic",
+      "expected_sha256": "044008f6c28b34cda9851d50053742b70ef5a0c857498dad41d2b6d1913b75a8"
+    },
+    {
+      "id": "ons_family_spending_fig1_csv",
+      "title": "Family spending FYE2024 Figure 1 data (real-terms weekly expenditure)",
+      "publisher": "Office for National Statistics",
+      "url": "https://www.ons.gov.uk/generator?uri=/peoplepopulationandcommunity/personalandhouseholdfinances/expenditure/bulletins/familyspendingintheuk/april2023tomarch2024/d46396b3&format=csv",
+      "tier": "official_statistic",
+      "artifact_format": "csv",
+      "expected_sha256": "5c58ea592f31e6ed3a037c86243f22e7aa06ef95d35d8f729a4bf46ed8b85092"
+    },
+    {
+      "id": "ons_family_spending_fye_2024",
+      "title": "Family spending in the UK: April 2023 to March 2024",
+      "publisher": "Office for National Statistics",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/expenditure/bulletins/familyspendingintheuk/april2023tomarch2024",
+      "tier": "official_statistic",
+      "required_for_extraction": true,
+      "expected_sha256": "69818d1c59511eac8c27f27cd56081de9bf39a9fe160d152e9665c29d2c426f3"
+    },
+    {
+      "id": "ons_household_disposable_income",
+      "title": "Average household income, UK: financial year ending 2023",
+      "publisher": "Office for National Statistics",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/householddisposableincomeandinequality/financialyearending2023",
+      "tier": "official_statistic",
+      "required_for_extraction": true,
+      "expected_sha256": "2f300c7ecc43968c96f1fafea498a3ba41ecc27872c0516d945497bd98892943"
+    },
+    {
+      "id": "ons_housing_affordability_2024",
+      "title": "Housing affordability in England and Wales: 2024",
+      "publisher": "Office for National Statistics",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024",
+      "tier": "official_statistic",
+      "expected_sha256": "9867cd8da2646a3cef76d5eb8c4fb59bcd6497bd4516f0d9498ab008ef3b5a9f",
+      "required_for_extraction": true
+    },
+    {
+      "id": "ons_housing_affordability_table1_csv",
+      "title": "Housing affordability 2024 Table 1 CSV",
+      "publisher": "Office for National Statistics",
+      "url": "https://www.ons.gov.uk/download/table?format=csv&uri=/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024/f3f8e947.json",
+      "tier": "official_statistic",
+      "artifact_format": "csv",
+      "expected_sha256": "64589a1611455182adb217919de2958b3ab165671fb13f95444a83917f65a80b"
+    },
+    {
+      "id": "ons_private_rent_and_house_prices_apr2024",
+      "title": "Private rent and house prices, UK: April 2024",
+      "publisher": "Office for National Statistics",
+      "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/april2024",
+      "tier": "official_statistic",
+      "expected_sha256": "902fb7d2d73158a556e67a677785cb57d44e32ddf00598bf924a0c2aabdf48e7",
+      "required_for_extraction": true
+    },
+    {
+      "id": "ons_private_rent_fig1_csv",
+      "title": "Private rent and house prices Apr 2024 Figure 1 CSV",
+      "publisher": "Office for National Statistics",
+      "url": "https://www.ons.gov.uk/generator?uri=/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/april2024/0f305274&format=csv",
+      "tier": "official_statistic",
+      "artifact_format": "csv",
+      "required_for_extraction": true,
+      "expected_sha256": "c0a2e225fbf2267645050a3e7f005cfe007e43db62b11e07649a026b36c540b1"
+    },
+    {
+      "id": "ons_private_rent_fig2_csv",
+      "title": "Private rent and house prices Apr 2024 Figure 2 CSV",
+      "publisher": "Office for National Statistics",
+      "url": "https://www.ons.gov.uk/generator?uri=/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/april2024/c5bb9c47&format=csv",
+      "tier": "official_statistic",
+      "artifact_format": "csv",
+      "expected_sha256": "642019b4decd14900e7f50834898bde64644760cea850391654ecc7efabd495c"
+    },
+    {
+      "id": "ons_private_rental_prices",
+      "title": "Private rental prices UK",
+      "publisher": "Office for National Statistics",
+      "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/indexofprivatehousingrentalprices/latest",
+      "tier": "official_statistic",
+      "expected_sha256": "7a7e51d43c4399d12d601d46150a8cbaa7310796976a59a40004f57bd3cf705b"
+    },
+    {
+      "id": "ons_uk_house_price_index",
+      "title": "UK House Price Index",
+      "publisher": "Office for National Statistics / HM Land Registry",
+      "url": "https://www.gov.uk/government/collections/uk-house-price-index-reports",
+      "tier": "official_statistic",
+      "expected_sha256": "23158f5237fc88a12534bff93665b4d5ed1e39cb55bd45110dd8b3124ab66b01"
+    },
+    {
+      "id": "slc_annual_report_2024_25",
+      "title": "Student Loans Company annual report and accounts 2024 to 2025",
+      "publisher": "Student Loans Company / GOV.UK",
+      "url": "https://www.gov.uk/government/publications/slc-annual-report-and-accounts-2024-to-2025",
+      "tier": "administrative_record",
+      "expected_sha256": "92e6222a9db1ec1167eecbcdeca9d77b061c0f5936e1c235619a73a40b0edf19"
+    },
+    {
+      "id": "uk_data_service_fes_series_200016",
+      "title": "Family Expenditure Survey series 200016",
+      "publisher": "UK Data Service",
+      "url": "https://datacatalogue.ukdataservice.ac.uk/series/series?id=200016",
+      "tier": "administrative_record",
+      "expected_sha256": "21ac6c58a11a22883a2a9f7b26f054913a97ddaa8cd6a899aa9f12a110ee779e"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "description": "Sensitivity run for article using rent_vs_own model with alternate rent inflation assumptions only.",
+  "assumptions_held_constant": {
+    "house_price_growth": 0.0432,
+    "mortgage_rate": 0.0391,
+    "savings_return": 0.0364,
+    "mortgage_term_years": 30
+  },
+  "scenarios": [
+    {
+      "scenario": "Conservative",
+      "rent_inflation": 0.03,
+      "buyer_net_worth": 1031395.78,
+      "renter_net_worth": 119858.85,
+      "wealth_gap": 911536.93,
+      "buyer_total_paid": 707166.52,
+      "renter_total_paid": 718547.62,
+      "final_monthly_rent": 2936.28
+    },
+    {
+      "scenario": "Base case",
+      "rent_inflation": 0.05,
+      "buyer_net_worth": 1031395.78,
+      "renter_net_worth": -273974.71,
+      "wealth_gap": 1305370.49,
+      "buyer_total_paid": 707166.52,
+      "renter_total_paid": 1000593.65,
+      "final_monthly_rent": 5128.7
+    },
+    {
+      "scenario": "Stress",
+      "rent_inflation": 0.091,
+      "buyer_net_worth": 1031395.78,
+      "renter_net_worth": -1720934.66,
+      "wealth_gap": 2752330.44,
+      "buyer_total_paid": 707166.52,
+      "renter_total_paid": 2083678.47,
+      "final_monthly_rent": 15575.28
+    }
+  ]
+}

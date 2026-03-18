@@ -1,0 +1,136 @@
+{
+  "model": "leasehold",
+  "version": "1.0",
+  "property_value": {
+    "value": 290000.0,
+    "provenance": {
+      "kind": "derived",
+      "source_ids": [
+        "ons_housing_affordability_table1_csv"
+      ],
+      "method": "Computed from extracted metrics: property baseline from rule 'CSV row=England, column='Median House price (12 months to Sep 2024)''."
+    }
+  },
+  "initial_service_charge": {
+    "value": 2150,
+    "provenance": {
+      "kind": "assumption",
+      "source_ids": [
+        "gov_english_housing_survey",
+        "gov_leasehold_statistics"
+      ],
+      "assumption_class": "scenario_model",
+      "assumption_basis": "Representative annual service charge scenario baseline; not directly machine-extracted from a primary-source table in this pipeline."
+    }
+  },
+  "lease_length": {
+    "value": 99,
+    "provenance": {
+      "kind": "assumption",
+      "source_ids": [
+        "gov_leasehold_statistics"
+      ],
+      "assumption_class": "common_parlance",
+      "assumption_basis": "Scenario contract length baseline for lifecycle simulation."
+    }
+  },
+  "extend_at_years": {
+    "value": 75,
+    "provenance": {
+      "kind": "assumption",
+      "source_ids": [
+        "gov_leasehold_statistics",
+        "gov_leasehold_extending_or_ending_lease"
+      ],
+      "assumption_class": "policy_anchor",
+      "assumption_basis": "Policy-anchored timing assumption: GOV.UK lease guidance indicates extension costs increase at 80 years or less remaining; model extends at 75 years as a conservative buffer."
+    }
+  },
+  "freehold_comparator": {
+    "annual_maintenance": 1500,
+    "annual_inflation": 0.025,
+    "provenance": {
+      "kind": "assumption",
+      "source_ids": [
+        "ons_family_spending_fye_2024"
+      ],
+      "assumption_class": "scenario_model",
+      "assumption_basis": "Comparator assumptions for long-run freehold maintenance costs."
+    }
+  },
+  "scenarios": [
+    {
+      "name": "Flat Ground Rent (\u00a3250/year, no escalation)",
+      "label": "Flat \u00a3250",
+      "initial_ground_rent": 250,
+      "ground_rent_type": "flat",
+      "doubling_period": null,
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "gov_leasehold_statistics"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Ground-rent clause scenario for stress testing; modeled assumption rather than directly extracted microdata."
+      }
+    },
+    {
+      "name": "RPI-linked Ground Rent (\u00a3250 starting, 3% annual)",
+      "label": "RPI-linked \u00a3250",
+      "initial_ground_rent": 250,
+      "ground_rent_type": "rpi",
+      "doubling_period": null,
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "gov_leasehold_statistics"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Ground-rent clause scenario for stress testing; modeled assumption rather than directly extracted microdata."
+      }
+    },
+    {
+      "name": "Doubling Every 10 Years (\u00a3250 starting)",
+      "label": "Doubling 10yr \u00a3250",
+      "initial_ground_rent": 250,
+      "ground_rent_type": "doubling",
+      "doubling_period": 10,
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "gov_leasehold_statistics"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Ground-rent clause scenario for stress testing; modeled assumption rather than directly extracted microdata."
+      }
+    },
+    {
+      "name": "Doubling Every 25 Years (\u00a3250 starting)",
+      "label": "Doubling 25yr \u00a3250",
+      "initial_ground_rent": 250,
+      "ground_rent_type": "doubling",
+      "doubling_period": 25,
+      "provenance": {
+        "kind": "assumption",
+        "source_ids": [
+          "gov_leasehold_statistics"
+        ],
+        "assumption_class": "scenario_model",
+        "assumption_basis": "Ground-rent clause scenario for stress testing; modeled assumption rather than directly extracted microdata."
+      }
+    }
+  ],
+  "provenance": {
+    "kind": "derived",
+    "source_ids": [
+      "ons_housing_affordability_table1_csv"
+    ],
+    "method": "Computed from extracted metrics for property baseline, with all lease-term and ground-rent structures explicitly labeled as assumptions."
+  },
+  "generated": {
+    "generator": "code/build_provenance_inputs.py",
+    "generated_utc": "2026-02-13T17:51:29.711819+00:00",
+    "artifact_lock_sha256": "7c23e0af04caf61f7e2fd707859ec0652ab92a7fd30501fc7c8d45dbd8aa28ed",
+    "extracted_metrics_sha256": "59292fc8a1d8ebb474f67a966fa7d61c9003aac572e684bda1bcef913ccd76ae"
+  }
+}

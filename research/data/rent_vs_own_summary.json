@@ -1,0 +1,48 @@
+{
+  "simulation_period": "2024 - 2054",
+  "age_range": "25 - 55",
+  "initial_conditions": {
+    "property_price": "\u00a3290,000",
+    "deposit_required": "\u00a358,000 (20%)",
+    "monthly_mortgage_payment": "\u00a31,095.60",
+    "initial_monthly_rent": "\u00a31,246",
+    "mortgage_rate": "3.9%",
+    "mortgage_term": "30 years"
+  },
+  "derived_inputs": {
+    "market_rent_inflation": "9.1% annually",
+    "house_price_growth": "4.3% annually",
+    "savings_return": "3.6% annually"
+  },
+  "assumptions": {
+    "maintenance_cost": "1.0% of property value"
+  },
+  "final_positions": {
+    "buyer": {
+      "age": 55,
+      "property_value": "\u00a31,031,395.78",
+      "mortgage_remaining": "\u00a30.00",
+      "equity": "\u00a31,031,395.78",
+      "net_worth": "\u00a31,031,395.78",
+      "total_paid": "\u00a3707,166.52"
+    },
+    "renter": {
+      "age": 55,
+      "cash_savings": "\u00a3-1,720,934.66",
+      "net_worth": "\u00a3-1,720,934.66",
+      "total_paid": "\u00a32,083,678.47",
+      "final_monthly_rent": "\u00a315,575.28"
+    }
+  },
+  "wealth_divergence": {
+    "absolute_gap": "\u00a32,752,330.44",
+    "ratio": "N/A",
+    "buyer_advantage": "\u00a32,752,330.44"
+  },
+  "key_findings": {
+    "renter_dead_money": "\u00a32,083,678.47",
+    "buyer_equity_built": "\u00a31,031,395.78",
+    "property_appreciation": "\u00a3741,395.78",
+    "rent_escalation": "1150.0% increase over 30 years"
+  }
+}
